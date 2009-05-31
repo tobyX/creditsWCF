@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE package SYSTEM "DTD/package.dtd">
+<package name="com.toby.wcf.guthaben">
+
+	<packageInformation>
+		<packageName>GuthabenBasispaket</packageName>
+		<isUnique>1</isUnique>
+		<packageDescription>Guthaben fürs WCF (Basispaket)</packageDescription>
+		<standalone>0</standalone>
+		<version>0.9.0</version>
+		<date>2008-11-01</date>
+		<plugin>com.woltlab.wcf</plugin>
+	</packageInformation>
+
+	<authorInformation>
+		<author>Tobias Friebel</author>
+		<authorURL>http://wbbmods.tobyf.de/trac/wiki/GuthabenBasispaket</authorURL>
+	</authorInformation>
+
+	<requiredpackages>
+		<requiredpackage>com.woltlab.wcf</requiredpackage>
+	</requiredpackages>
+
+	<instructions type="install">
+		<languages languagecode="de">de.utf-8.xml</languages>
+		<languages languagecode="de-informal">de-informal.utf-8.xml</languages>
+		<files>files.tar</files>
+		<options>options.xml</options>
+		<cronjobs>cronjobs.xml</cronjobs>
+		<sql>install.sql</sql>
+		<eventlistener>eventlistener.xml</eventlistener>
+		<templates>templates.tar</templates>
+		<pagemenu>pagemenu.xml</pagemenu>
+		<pagelocation>pagelocation.xml</pagelocation>
+		<groupoptions>groupoptions.xml</groupoptions>
+		<packageinstallationplugins>pip.tar</packageinstallationplugins>
+		<useroptions>useroptions.xml</useroptions>
+		<guthabenmainpage>mainpagemenu.xml</guthabenmainpage>
+		<guthabenprices>prices.xml</guthabenprices>
+	</instructions>
+
+	<instructions type="update" fromversion="0.8.6">
+		<files>files.tar</files>
+		<languages languagecode="de">de.utf-8.xml</languages>
+		<languages languagecode="de-informal">de-informal.utf-8.xml</languages>
+	</instructions>
+
+</package>

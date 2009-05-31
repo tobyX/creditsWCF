@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<!DOCTYPE data SYSTEM "http://www.woltlab.com/DTD/options.dtd">
+<data>
+	<import>
+		<categories>
+			<category name="guthaben"></category>
+			<category name="guthaben.rights">
+				<parent>guthaben</parent>
+			</category>
+			<category name="guthaben.transfer">
+				<parent>guthaben</parent>
+			</category>
+			<category name="guthaben.moderation">
+				<parent>guthaben</parent>
+			</category>
+		</categories>
+
+		<options>
+			<option name="guthaben.canuse">
+				<categoryname>guthaben.rights</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			<option name="guthaben.transfer.canuse">
+				<categoryname>guthaben.transfer</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			<option name="guthaben.transfer.canreceive">
+				<categoryname>guthaben.transfer</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			<option name="guthaben.moderation.cantransfer">
+				<categoryname>guthaben.moderation</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+			</option>
+			<option name="guthaben.log.canuse">
+				<categoryname>guthaben.rights</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			<option name="guthaben.forbes.canuse">
+				<categoryname>guthaben.rights</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+
+			<option name="guthaben.main.main">
+				<categoryname>guthaben.rights</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			<option name="guthaben.main.games">
+				<categoryname>guthaben.rights</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			<option name="guthaben.main.shop">
+				<categoryname>guthaben.rights</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+		</options>
+
+	</import>
+</data>

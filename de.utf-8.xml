@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE language SYSTEM "DTD/language.dtd">
+<language languagecode="de">
+
+	<category name="wcf.guthaben.log">
+		<item name="wcf.guthaben.log.title"><![CDATA[Kontoauszüge]]></item>
+		<item name="wcf.guthaben.log.description"><![CDATA[Hier können Sie Ihre Kontoauzüge sehen, in denen alle Ihre Vorgänge mit Ihrem Guthaben verzeichnet sind.]]></item>
+		<item name="wcf.guthaben.log.currentguthaben"><![CDATA[Gesamter Umsatz:]]></item>
+		<item name="wcf.guthaben.log.compress"><![CDATA[Zusammenfassung alter Kontoauszüge]]></item>
+		<item name="wcf.guthaben.log.transferto"><![CDATA[Überweisung an]]></item>
+		<item name="wcf.guthaben.log.transferfrom"><![CDATA[Überweisung von]]></item>
+		<item name="wcf.guthaben.log.loginfo"><![CDATA[Buchungsinformation]]></item>
+		<item name="wcf.guthaben.log.change"><![CDATA[Umsatz]]></item>
+		<item name="wcf.guthaben.log.date"><![CDATA[Datum]]></item>
+		<item name="wcf.guthaben.log.dailytax"><![CDATA[Tägliche Steuer]]></item>
+        <item name="wcf.guthaben.log.id"><![CDATA[Buchungsid]]></item>
+        <item name="wcf.guthaben.log.time"><![CDATA[Buchungsdatum]]></item>
+        <item name="wcf.guthaben.log.desc"><![CDATA[Buchungsbeschreibung]]></item>
+		<item name="wcf.guthaben.log.nolog"><![CDATA[Keine Buchungen]]></item>
+		<item name="wcf.guthaben.log.pagesum"><![CDATA[Übertrag]]></item>
+		<item name="wcf.guthaben.log.allsum"><![CDATA[Gesamter Umsatz]]></item>
+		<item name="wcf.guthaben.log.reset"><![CDATA[Guthaben zurückgesetzt]]></item>
+		<item name="wcf.guthaben.log.moderativ"><![CDATA[Moderative Überweisung von]]></item>
+		<item name="wcf.guthaben.log.newpn"><![CDATA[Neue Private Nachricht:]]></item>
+		<item name="wcf.guthaben.log.deletepn"><![CDATA[Abzug für zurückgezogene private Nachricht:]]></item>
+	</category>
+
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.guthaben"><![CDATA[Guthaben]]></item>
+		<item name="wcf.acp.option.category.guthaben.description"><![CDATA[Einstellungen für das Guthabensystem]]></item>
+		<item name="wcf.acp.option.category.guthaben.general"><![CDATA[Guthaben global]]></item>
+		<item name="wcf.acp.option.category.guthaben.general.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.guthaben_enable_global"><![CDATA[Guthaben aktivieren]]></item>
+		<item name="wcf.acp.option.guthaben_enable_global.description"><![CDATA[Soll das Guthabensystem aktiviert werden?]]></item>
+		<item name="wcf.acp.option.category.guthaben.spend"><![CDATA[Abgaben]]></item>
+		<item name="wcf.acp.option.category.guthaben.spend.description"><![CDATA[Hier werden die Abgaben definiert. Um eine Aktion zu deaktivieren einfach den Wert auf 0 setzen.]]></item>
+		<item name="wcf.acp.option.guthaben_tax_per_day"><![CDATA[Steuern pro Tag]]></item>
+		<item name="wcf.acp.option.guthaben_tax_per_day.description"><![CDATA[Jedem User wird dieser Prozentsatz von seinem Guthaben jeden Tag abgezogen. User die gesperrt sind oder mehr als 100 Tage nicht aktiv waren sind davon nicht betroffen. Es können auch Werte kleiner als 1 angegeben werden, z.B. 0,5.]]></item>
+		<item name="wcf.acp.option.guthaben_enable_autocompress"><![CDATA[Automatische Komprimierung von Logeinträgen]]></item>
+		<item name="wcf.acp.option.guthaben_enable_autocompress.description"><![CDATA[Am 15. eines jeden Monats werden die Logeinträge automatisch komprimiert]]></item>
+	</category>
+
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.category.guthaben"><![CDATA[Guthabenrechte]]></item>
+		<item name="wcf.acp.group.option.category.guthaben.rights"><![CDATA[Generell]]></item>
+		<item name="wcf.acp.group.option.category.guthaben.transfer"><![CDATA[Überweisungen]]></item>
+		<item name="wcf.acp.group.option.category.guthaben.moderation"><![CDATA[Moderation]]></item>
+		<item name="wcf.acp.group.option.category.guthaben.rights.description"><![CDATA[Generelle Guthabenrechte]]></item>
+		<item name="wcf.acp.group.option.guthaben.canuse"><![CDATA[Kann Guthabensystem benutzen]]></item>
+		<item name="wcf.acp.group.option.guthaben.canuse.description"><![CDATA[]]></item>
+		<item name="wcf.acp.group.option.guthaben.log.canuse"><![CDATA[Kann Kontoauszüge einsehen]]></item>
+		<item name="wcf.acp.group.option.guthaben.log.canuse.description"><![CDATA[]]></item>
+		<item name="wcf.acp.group.option.guthaben.forbes.canuse"><![CDATA[Kann Forbesliste sehen]]></item>
+		<item name="wcf.acp.group.option.guthaben.forbes.canuse.description"><![CDATA[Betrifft nur den Menüpunkt im Guthabenmenü]]></item>
+		<item name="wcf.acp.group.option.category.guthaben.transfer.description"><![CDATA[Einschränkungen des Überweisungssystems]]></item>
+		<item name="wcf.acp.group.option.guthaben.transfer.canuse"><![CDATA[Kann Überweisungen tätigen]]></item>
+		<item name="wcf.acp.group.option.guthaben.transfer.canuse.description"><![CDATA[]]></item>
+		<item name="wcf.acp.group.option.guthaben.transfer.canreceive"><![CDATA[Kann Überweisungen empfangen]]></item>
+		<item name="wcf.acp.group.option.guthaben.transfer.canreceive.description"><![CDATA[Dürfen Mitglieder dieser Gruppe Überweisungen empfangen?]]></item>
+		<item name="wcf.acp.group.option.category.guthaben.moderation.description"><![CDATA[Besondere Rechte für Moderatoren]]></item>
+		<item name="wcf.acp.group.option.guthaben.moderation.cantransfer"><![CDATA[Kann moderative Überweisungen tätigen]]></item>
+		<item name="wcf.acp.group.option.guthaben.moderation.cantransfer.description"><![CDATA[Mitglieder dieser Gruppe können Überweisungen aus dem Nichts tätigen oder anderen sogar per Überweisung Guthaben abziehen.]]></item>
+	</category>
+
+	<category name="wcf.guthaben">
+		<item name="wcf.guthaben.profile"><![CDATA[Aktuelles Guthaben]]></item>
+		<item name="wcf.guthaben.currency"><![CDATA[E-Dollar]]></item>
+		<item name="wcf.guthaben.pagetitle"><![CDATA[Guthaben]]></item>
+		<item name="wcf.guthaben.copyright"><![CDATA[<a href="http://wbbmods.tobyf.de/trac/wiki/GuthabenPlugin">Plugin: <strong>UserGuthaben{if SHOW_VERSION_NUMBER} 0.8{/if}</strong></a>, entwickelt von <a href="http://www.enigma-forum.de"><strong>Toby</strong></a>]]></item>
+	</category>
+
+	<category name="wcf.guthaben.transfer">
+		<item name="wcf.guthaben.transfer"><![CDATA[Überweisung]]></item>
+		<item name="wcf.guthaben.transfer.title"><![CDATA[Überweisung]]></item>
+		<item name="wcf.guthaben.transfer.recipient"><![CDATA[Empfänger]]></item>
+		<item name="wcf.guthaben.transfer.value"><![CDATA[Betrag]]></item>
+		<item name="wcf.guthaben.transfer.description"><![CDATA[Hiermit können Sie Guthaben an andere Benutzer überweisen.]]></item>
+		<item name="wcf.guthaben.transfer.moderativ"><![CDATA[Moderative Überweisung]]></item>
+		<item name="wcf.guthaben.transfer.tomutch"><![CDATA[Sie können nicht mehr überweisen als Sie haben!]]></item>
+		<item name="wcf.guthaben.transfer.cannotreceive"><![CDATA[{$error.username} kann keine Überweisungen empfangen!]]></item>
+		<item name="wcf.guthaben.transfer.purpose"><![CDATA[Verwendungszweck]]></item>
+	</category>
+
+	<category name="wcf.guthaben.mainpage">
+		<item name="wcf.guthaben.mainpage.main"><![CDATA[Guthaben]]></item>
+		<item name="wcf.guthaben.mainpage.games"><![CDATA[Spiele]]></item>
+		<item name="wcf.guthaben.mainpage.shop"><![CDATA[Shop]]></item>
+		<item name="wcf.guthaben.mainpage.transfer"><![CDATA[Guthaben überweisen]]></item>
+		<item name="wcf.guthaben.mainpage.transfer.description"><![CDATA[Hier können Sie Ihr Guthaben an andere Mitglieder überweisen.]]></item>
+		<item name="wcf.guthaben.mainpage.log"><![CDATA[Kontoauszüge]]></item>
+		<item name="wcf.guthaben.mainpage.log.description"><![CDATA[Hier können Sie Ihre Kontoauzüge sehen, in denen alle Ihre Vorgänge mit Ihrem Guthaben verzeichnet sind.]]></item>
+		<item name="wcf.guthaben.mainpage.forbes"><![CDATA[Forbesliste]]></item>
+		<item name="wcf.guthaben.mainpage.forbes.description"><![CDATA[Hier können Sie die Vermögen aller einsehen.]]></item>
+		<item name="wcf.guthaben.mainpage.prices"><![CDATA[Preise und Einkommen]]></item>
+		<item name="wcf.guthaben.mainpage.prices.description"><![CDATA[Hier können Sie die Verdienstmöglichkeiten und Preise für einzelne Aktionen im Forum einsehen.]]></item>
+	</category>
+
+	<category name="wcf.guthaben.prices">
+		<item name="wcf.guthaben.prices.title"><![CDATA[Preise und Einkommen]]></item>
+		<item name="wcf.guthaben.prices.desc"><![CDATA[Hier können Sie die Verdienstmöglichkeiten und Preise für einzelne Aktionen im Forum einsehen.]]></item>
+		<item name="wcf.guthaben.prices.dailytax"><![CDATA[Steuer]]></item>
+		<item name="wcf.guthaben.prices.dailytax.desc"><![CDATA[Die Steuer wird täglich erhoben und prozentual abgeführt.]]></item>
+		<item name="wcf.guthaben.prices.item"><![CDATA[Vorgang]]></item>
+		<item name="wcf.guthaben.prices.itemdesc"><![CDATA[Beschreibung des Vorgangs]]></item>
+		<item name="wcf.guthaben.prices.price"><![CDATA[Preis]]></item>
+		<item name="wcf.guthaben.prices.earnpn"><![CDATA[Einkommen per PN]]></item>
+		<item name="wcf.guthaben.prices.earnpn.desc"><![CDATA[Dieser Betrag wird Ihnen pro versendeter privater Nachricht gutgeschrieben.]]></item>
+	</category>
+
+	<category name="wcf.header.menu">
+		<item name="wcf.header.menu.guthabenmain"><![CDATA[Guthaben]]></item>
+	</category>
+
+	<category name="wcf.guthaben.forbes">
+		<item name="wcf.guthaben.forbes.title"><![CDATA[Forbes Liste]]></item>
+		<item name="wcf.guthaben.forbes.description"><![CDATA[Eine Liste der Benutzer dieses Forums, sortiert nach Vermögen.]]></item>
+		<item name="wcf.guthaben.forbes.name"><![CDATA[Name]]></item>
+		<item name="wcf.guthaben.forbes.guthaben"><![CDATA[Vermögen]]></item>
+	</category>
+
+	<category name="wcf.usersOnline">
+		<item name="wcf.usersOnline.location.guthaben.main"><![CDATA[<a href="index.php?page=GuthabenMain{SID_ARG_2ND}">Guthaben</a>]]></item>
+		<item name="wcf.usersOnline.location.guthaben.transfer"><![CDATA[<a href="index.php?page=GuthabenTransfer{SID_ARG_2ND}">Guthaben überweisen</a>]]></item>
+		<item name="wcf.usersOnline.location.guthaben.log"><![CDATA[<a href="index.php?page=GuthabenLog{SID_ARG_2ND}">Kontoauszüge</a>]]></item>
+		<item name="wcf.usersOnline.location.guthaben.prices"><![CDATA[<a href="index.php?page=GuthabenPrices{SID_ARG_2ND}">Preise</a>]]></item>
+	</category>
+
+	<category name="wcf.user.option">
+		<item name="wcf.user.option.guthaben"><![CDATA[Guthaben]]></item>
+		<item name="wcf.user.option.guthaben.description"><![CDATA[Hier können Sie das Guthaben des Benutzers verändern.]]></item>
+	</category>
+
+</language>

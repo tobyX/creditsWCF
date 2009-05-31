@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE data SYSTEM "http://www.woltlab.com/DTD/options.dtd">
+<data>
+	<import>
+		<categories>
+
+			<category name="guthaben"></category>			<category name="guthaben.general">
+				<parent>guthaben</parent>
+			</category>
+			<category name="guthaben.spend">
+				<parent>guthaben</parent>
+			</category>
+			<category name="guthaben.earn">
+				<parent>guthaben</parent>
+			</category>
+		</categories>
+
+		<options>
+
+			<!-- general -->
+			<option name="guthaben_enable_global">
+				<categoryname>guthaben.general</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			<option name="guthaben_enable_autocompress">
+				<categoryname>guthaben.general</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			<!-- general -->
+
+			<!-- spend -->
+			<option name="guthaben_tax_per_day">
+				<categoryname>guthaben.spend</categoryname>
+				<optiontype>float</optiontype>
+				<defaultvalue>5</defaultvalue>
+			</option>
+			<!-- spend -->
+
+			<!-- earn -->
+			<option name="guthaben_earn_per_pn">
+				<categoryname>guthaben.earn</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>5</defaultvalue>
+			</option>
+			<!-- earn -->
+
+		</options>
+	</import>
+</data>

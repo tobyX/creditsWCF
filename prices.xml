@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE import SYSTEM "DTD/import.dtd">
+<data>
+	<import>
+	
+		<guthabenprices name="wcf.guthaben.prices.earnpn">
+			<description>wcf.guthaben.prices.earnpn.desc</description>
+			<price>GUTHABEN_EARN_PER_PN</price>
+		</guthabenprices>
+		
+		<guthabenprices name="wcf.guthaben.prices.dailytax">
+			<description>wcf.guthaben.prices.dailytax.desc</description>
+			<price>GUTHABEN_TAX_PER_DAY</price>
+			<isnegative>1</isnegative>
+			<currency>%</currency>
+		</guthabenprices>
+
+	</import>
+</data>

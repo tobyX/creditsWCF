@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE import SYSTEM "DTD/import.dtd">
+<data>
+	<import>
+		<pagelocation name="wcf.usersOnline.location.guthaben.transfer">
+			<pattern><![CDATA[index\.php\?form=guthabenTransfer]]></pattern>
+		</pagelocation>
+		<pagelocation name="wcf.usersOnline.location.guthaben.main">
+			<pattern><![CDATA[index\.php\?page=guthabenMain]]></pattern>
+		</pagelocation>
+		<pagelocation name="wcf.usersOnline.location.guthaben.log">
+			<pattern><![CDATA[index\.php\?page=guthabenLog]]></pattern>
+		</pagelocation>
+		<pagelocation name="wcf.usersOnline.location.guthaben.prices">
+			<pattern><![CDATA[index\.php\?page=guthabenPrices]]></pattern>
+		</pagelocation>
+	</import>
+</data>
