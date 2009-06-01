@@ -1,7 +1,6 @@
 {include file="documentHeader"}
 <head>
 	<title>{lang}wcf.guthaben.pagetitle{/lang} - {PAGE_TITLE}</title>
-	<link rel="stylesheet" type="text/css" media="screen" href="{@RELATIVE_WCF_DIR}style/guthaben.css" />
 	{include file='headInclude' sandbox=false}
 </head>
 <body>

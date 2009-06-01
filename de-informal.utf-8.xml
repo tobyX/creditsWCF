@@ -13,7 +13,7 @@
 		<item name="wcf.guthaben.log.change"><![CDATA[Umsatz]]></item>
 		<item name="wcf.guthaben.log.date"><![CDATA[Datum]]></item>
 		<item name="wcf.guthaben.log.dailytax"><![CDATA[Tägliche Steuer]]></item>
-        <item name="wcf.guthaben.log.id"><![CDATA[Buchungsid]]></item>
+        <item name="wcf.guthaben.log.id"><![CDATA[Buchungsnummer]]></item>
         <item name="wcf.guthaben.log.time"><![CDATA[Buchungsdatum]]></item>
         <item name="wcf.guthaben.log.desc"><![CDATA[Buchungsbeschreibung]]></item>
 		<item name="wcf.guthaben.log.nolog"><![CDATA[Keine Buchungen]]></item>

@@ -44,6 +44,11 @@
 				<optiontype>integer</optiontype>
 				<defaultvalue>5</defaultvalue>
 			</option>
+			<option name="guthaben_earn_for_register">
+				<categoryname>guthaben.earn</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>500</defaultvalue>
+			</option>
 			<!-- earn -->
 
 		</options>

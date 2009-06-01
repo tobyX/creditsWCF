@@ -1,7 +1,6 @@
 {include file="documentHeader"}
 <head>
 	<title>{lang}wcf.guthaben.log.title{/lang} - {lang}wcf.guthaben.pagetitle{/lang} - {PAGE_TITLE}</title>
-	<link rel="stylesheet" type="text/css" media="screen" href="{@RELATIVE_WCF_DIR}style/guthaben.css" />
 	{include file='headInclude' sandbox=false}
 	<script type="text/javascript" src="{@RELATIVE_WCF_DIR}js/MultiPagesLinks.class.js"></script>
 </head>
@@ -35,20 +34,20 @@
 				</thead>
 				<tbody>
 					{foreach from=$logEntries item=log}
-						<tr class="container-{cycle values='1,2'}">
+						<tr class="container-{cycle values='1,2'} {if $log.guthaben < 0}deleted{else}disabled{/if}">
 							<td class="columnGuthabenLogId">{$log.logID}</td>
 							<td class="columnGuthabenTime">{@$log.time|time}</td>
 							<td class="columnGuthabenDesc">{lang}{$log.langvar}{/lang} {if $log.link}<a href="{$log.link}">{/if}{$log.text}{if $log.link}</a>{/if}</td>
-							<td class="columnGuthabenChange"><span {if $log.guthaben < 0} style="color:red"{else} style="color:green"{/if}>{@$log.guthaben}</span></td>
+							<td class="columnGuthabenChange floatedElementLabel">{@$log.guthaben}</td>
 						</tr>
 					{/foreach}
-					<tr class="container-1">
+					<tr class="container-1 {if $pageSum < 0}deleted{else}disabled{/if}">
 						<td colspan="3" class="columnGuthabenPageSumDesc">{lang}wcf.guthaben.log.pagesum{/lang}</td>
-						<td class="columnGuthabenPageSum"><span {if $pageSum < 0} style="color:red"{else} style="color:green"{/if}>{@$pageSum}</span></td>
+						<td class="columnGuthabenPageSum floatedElementLabel"><span class="">{@$pageSum}</span></td>
 					</tr>
-					<tr class="container-2">
+					<tr class="container-2 {if $allSum < 0}deleted{else}disabled{/if}">
 						<td colspan="3" class="columnGuthabenPageSumDesc">{lang}wcf.guthaben.log.allsum{/lang}</td>
-						<td class="columnGuthabenPageSum"><strong>{@$allSum}</strong></td>
+						<td class="columnGuthabenPageSum floatedElementLabel"><strong>{@$allSum}</strong></td>
 					</tr>
 				</tbody>
 			</table>

@@ -1,7 +1,6 @@
 {include file="documentHeader"}
 <head>
 	<title>{lang}wcf.guthaben.prices.title{/lang} - {lang}wcf.guthaben.pagetitle{/lang} - {PAGE_TITLE}</title>
-	<link rel="stylesheet" type="text/css" media="screen" href="{@RELATIVE_WCF_DIR}style/guthaben.css" />
 	{include file='headInclude' sandbox=false}
 	<script type="text/javascript" src="{@RELATIVE_WCF_DIR}js/MultiPagesLinks.class.js"></script>
 </head>
@@ -34,10 +33,10 @@
 				</thead>
 				<tbody>
 					{foreach from=$prices item=price}
-						<tr class="container-{cycle values='1,2'}">
+						<tr class="container-{cycle values='1,2'} {if $price.priceConstant < 0 || $price.priceIsNegative}deleted{else}disabled{/if}">
 							<td class="columnPricesItem">{lang}{$price.priceItem}{/lang}</td>
 							<td class="columnPricesDesc">{lang}{$price.priceDescription}{/lang}</td>
-							<td class="columnPricesPrice"><span {if $price.priceConstant < 0 || $price.priceIsNegative} style="color:red"{else} style="color:green"{/if}>{$price.price}</span></td>
+							<td class="columnPricesPrice floatedElementLabel">{@$price.price}</td>
 						</tr>
 					{/foreach}
 				</tbody>

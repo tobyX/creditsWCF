@@ -137,7 +137,7 @@ class GuthabenTransferForm extends AbstractForm
 			$user = new User($this->userID);
 
 			if (intval($_POST['transfer']) < 0)
-				Guthaben :: sub($this->transfer, 'wcf.guthaben.log.moderativ', WCF::getUser()->username.': '.$this->text, '', $user);
+				Guthaben :: sub($this->transfer, 'wcf.guthaben.log.moderativ', WCF::getUser()->username.': '.$this->text, '', $user, true);
 			else
 				Guthaben :: add($this->transfer, 'wcf.guthaben.log.moderativ', WCF::getUser()->username.': '.$this->text, '', $user);
 		}

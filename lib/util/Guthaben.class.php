@@ -1,9 +1,10 @@
 <?php
+
 /*
  * +-----------------------------------------+
  * | Copyright (c) 2008 Tobias Friebel       |
  * +-----------------------------------------+
- * | Authors: Tobias Friebel <TobyF@Web.de>	 |
+ * | Authors: Tobias Friebel <TobyF@Web.de>  |
  * +-----------------------------------------+
  *
  * CC Namensnennung-Keine kommerzielle Nutzung-Keine Bearbeitung
@@ -14,6 +15,7 @@
 
 class Guthaben
 {
+
 	/**
 	 * get moneystring with currency
 	 *
@@ -29,8 +31,9 @@ class Guthaben
 			$user = WCF :: getUser();
 		}
 
-		if ($float) return $user->guthaben;
-		return 	self :: format($user->guthaben);
+		if ($float)
+			return $user->guthaben;
+		return self :: format($user->guthaben);
 	}
 
 	/**
@@ -65,15 +68,15 @@ class Guthaben
 	 */
 	public static function format($guthaben)
 	{
-		$guthaben = number_format($guthaben, 2, '.', '');
+		$guthaben = round($guthaben, 2);
 
 		// replace decimal point
-		$guthaben = str_replace('.', WCF::getLanguage()->get('wcf.global.decimalPoint'), $guthaben);
+		$guthaben = str_replace('.', WCF :: getLanguage()->get('wcf.global.decimalPoint'), $guthaben);
 
 		// add thousands separator
 		$guthaben = StringUtil :: addThousandsSeparator($guthaben);
 
-		return $guthaben.' '.WCF::getLanguage()->get('wcf.guthaben.currency');
+		return $guthaben . ' ' . WCF :: getLanguage()->get('wcf.guthaben.currency');
 	}
 
 	/**
@@ -87,11 +90,12 @@ class Guthaben
 	{
 		$editor = $user->getEditor();
 		$editor->updateOptions(array (
-									'guthaben' => 0
-									)
-							   );
-
-		self :: writeToLog(0, 'wcf.guthaben.log.reset', '', '', $user->userID);
+			'guthaben' => 0
+		));
+		
+		self :: writeToLog($user->guthaben * -1, 'wcf.guthaben.log.reset', '', '', $user->userID);
+		
+		$user->guthaben = 0;
 
 		return true;
 	}
@@ -121,9 +125,10 @@ class Guthaben
 
 		$editor = $user->getEditor();
 		$editor->updateOptions(array (
-									'guthaben' => ($user->guthaben + $add),
-									)
-							   );
+			'guthaben' => ($user->guthaben + $add)
+		));
+
+		$user->guthaben += $add;
 
 		self :: writeToLog($add, $langvar, $text, $link, $user->userID);
 
@@ -156,9 +161,10 @@ class Guthaben
 
 		$editor = $user->getEditor();
 		$editor->updateOptions(array (
-									'guthaben' => ($user->guthaben - $sub),
-									)
-							   );
+			'guthaben' => ($user->guthaben - $sub)
+		));
+
+		$user->guthaben -= $sub;
 
 		self :: writeToLog(($sub * -1), $langvar, $text, $link, $user->userID);
 
@@ -176,15 +182,15 @@ class Guthaben
 	 */
 	public static function writeToLog($guthaben, $langvar, $text, $link, $userID)
 	{
-		$sql = "INSERT INTO wcf".WCF_N."_guthaben_log
-			    SET guthaben = ".$guthaben.",
-			    langvar = '".escapeString($langvar)."',
-			    text = '".escapeString($text)."',
-			    link = '".escapeString($link)."',
-			    userID = ".$userID.",
-			    time = ".TIME_NOW;
+		$sql = "INSERT INTO wcf" . WCF_N . "_guthaben_log
+			    SET guthaben = " . $guthaben . ",
+			    langvar = '" . escapeString($langvar) . "',
+			    text = '" . escapeString($text) . "',
+			    link = '" . escapeString($link) . "',
+			    userID = " . $userID . ",
+			    time = " . TIME_NOW;
 
-		WCF::getDB()->sendQuery($sql);
+		WCF :: getDB()->sendQuery($sql);
 	}
 
 	/**
@@ -212,10 +218,10 @@ class Guthaben
 		if (empty($text))
 			$text = '---';
 
-		if (!self :: sub($trans, 'wcf.guthaben.log.transferto', ' '.$totrans->username.': '.$text, '', $user))
+		if (!self :: sub($trans, 'wcf.guthaben.log.transferto', ' ' . $totrans->username . ': ' . $text, '', $user))
 			return false;
 
-		self :: add($trans, 'wcf.guthaben.log.transferfrom', ' '.$user->username.': '.$text, '', $totrans);
+		self :: add($trans, 'wcf.guthaben.log.transferfrom', ' ' . $user->username . ': ' . $text, '', $totrans);
 
 		return true;
 	}
@@ -232,9 +238,9 @@ class Guthaben
 			$user = WCF :: getUser();
 		}
 
-		$sql = "DELETE FROM wcf".WCF_N."_guthaben_log
-				WHERE userID = ".$user->userID;
-		WCF::getDB()->sendQuery($sql);
+		$sql = "DELETE FROM wcf" . WCF_N . "_guthaben_log
+				WHERE userID = " . $user->userID;
+		WCF :: getDB()->sendQuery($sql);
 
 		self :: writeToLog(floatval($user->guthaben), 'wcf.guthaben.log.compress', '', '', $user->userID);
 	}

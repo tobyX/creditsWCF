@@ -55,7 +55,7 @@ class GuthabenPricesPage extends AbstractPage
 			if ($price['priceCurrency'] == '')
 				$this->prices[$id]['price'] = Guthaben :: format($this->prices[$id]['priceConstant']);
 			else
-				$this->prices[$id]['price'] = $this->prices[$id]['priceConstant'] . ' ' . $price['priceCurrency'];
+				$this->prices[$id]['price'] = StringUtil::formatNumeric($this->prices[$id]['priceConstant']) . ' ' . $price['priceCurrency'];
 		}
 	}
 
