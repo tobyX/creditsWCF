@@ -25,7 +25,7 @@ class GuthabenRegisterListener implements EventListener
 			return;
 
 		if (GUTHABEN_EARN_FOR_REGISTER > 0)
-			Guthaben :: add(GUTHABEN_EARN_FOR_REGISTER, 'wcf.guthaben.log.newregister');
+			Guthaben :: add(GUTHABEN_EARN_FOR_REGISTER, 'wcf.guthaben.log.newregister', '', '', $eventObj->user);
 	}
 }
 ?>

@@ -23,6 +23,7 @@
 		<item name="wcf.guthaben.log.moderativ"><![CDATA[Moderative Überweisung von]]></item>
 		<item name="wcf.guthaben.log.newpn"><![CDATA[Neue Private Nachricht:]]></item>
 		<item name="wcf.guthaben.log.deletepn"><![CDATA[Abzug für zurückgezogene private Nachricht:]]></item>
+		<item name="wcf.guthaben.log.newregister"><![CDATA[Gutschrift für Registrierung]]></item>
 	</category>
 
 	<category name="wcf.acp.option">
@@ -38,6 +39,10 @@
 		<item name="wcf.acp.option.guthaben_tax_per_day.description"><![CDATA[Jedem User wird dieser Prozentsatz von seinem Guthaben jeden Tag abgezogen. User die gesperrt sind oder mehr als 100 Tage nicht aktiv waren sind davon nicht betroffen. Es können auch Werte kleiner als 1 angegeben werden, z.B. 0,5.]]></item>
 		<item name="wcf.acp.option.guthaben_enable_autocompress"><![CDATA[Automatische Komprimierung von Logeinträgen]]></item>
 		<item name="wcf.acp.option.guthaben_enable_autocompress.description"><![CDATA[Am 15. eines jeden Monats werden die Logeinträge automatisch komprimiert]]></item>
+		<item name="wcf.acp.option.guthaben_earn_per_pn"><![CDATA[Guthaben per PN]]></item>
+		<item name="wcf.acp.option.guthaben_earn_per_pn.description"><![CDATA[Jedem User wird diese Summe pro PN gutgeschrieben.]]></item>
+		<item name="wcf.acp.option.guthaben_earn_for_register"><![CDATA[Guthaben bei Registrierung]]></item>
+		<item name="wcf.acp.option.guthaben_earn_for_register.description"><![CDATA[Jedem User wird diese Summe bei der Registrierung gutgeschrieben.]]></item>
 	</category>
 
 	<category name="wcf.acp.group">

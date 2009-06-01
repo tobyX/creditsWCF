@@ -46,22 +46,6 @@
 				<optiontype>boolean</optiontype>
 				<defaultvalue>1</defaultvalue>
 			</option>
-
-			<option name="guthaben.main.main">
-				<categoryname>guthaben.rights</categoryname>
-				<optiontype>boolean</optiontype>
-				<defaultvalue>1</defaultvalue>
-			</option>
-			<option name="guthaben.main.games">
-				<categoryname>guthaben.rights</categoryname>
-				<optiontype>boolean</optiontype>
-				<defaultvalue>1</defaultvalue>
-			</option>
-			<option name="guthaben.main.shop">
-				<categoryname>guthaben.rights</categoryname>
-				<optiontype>boolean</optiontype>
-				<defaultvalue>1</defaultvalue>
-			</option>
 		</options>
 
 	</import>

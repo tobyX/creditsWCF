@@ -12,10 +12,5 @@
 			<eventName>saved</eventName>
 			<listenerClassFile>lib/system/event/listener/GuthabenRegisterListener.class.php</listenerClassFile>
 		</eventlistener>
-		<eventlistener>
-			<eventClassName>RegisterForm</eventClassName>
-			<eventName>assignVariables</eventName>
-			<listenerClassFile>lib/system/event/listener/GuthabenRegisterListener.class.php</listenerClassFile>
-		</eventlistener>
 	</import>
 </data>
