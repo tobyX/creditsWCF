@@ -52,6 +52,12 @@ class GuthabenPricesPage extends AbstractPage
 		{
 			$this->prices[$id]['priceConstant'] = constant($price['priceConstant']);
 			
+			if ($this->prices[$id]['priceConstant'] == 0)
+			{
+				unset($this->prices[$id]);
+				continue;
+			}
+			
 			if ($price['priceCurrency'] == '')
 				$this->prices[$id]['price'] = Guthaben :: format($this->prices[$id]['priceConstant']);
 			else
