@@ -110,6 +110,8 @@
 		<item name="wcf.guthaben.prices.price"><![CDATA[Preis]]></item>
 		<item name="wcf.guthaben.prices.earnpn"><![CDATA[Einkommen per PN]]></item>
 		<item name="wcf.guthaben.prices.earnpn.desc"><![CDATA[Dieser Betrag wird Ihnen pro versendeter privater Nachricht gutgeschrieben.]]></item>
+		<item name="wcf.guthaben.prices.earnregister"><![CDATA[Gutschrift bei Registrierung]]></item>
+		<item name="wcf.guthaben.prices.earnregister.desc"><![CDATA[Dieser Betrag wird jedem User bei der Registrierung gutgeschrieben.]]></item>
 	</category>
 
 	<category name="wcf.header.menu">

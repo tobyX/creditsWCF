@@ -8,6 +8,11 @@
 			<price>GUTHABEN_EARN_PER_PN</price>
 		</guthabenprices>
 		
+		<guthabenprices name="wcf.guthaben.prices.earnregister">
+			<description>wcf.guthaben.prices.earnregister.desc</description>
+			<price>GUTHABEN_EARN_FOR_REGISTER</price>
+		</guthabenprices>
+		
 		<guthabenprices name="wcf.guthaben.prices.dailytax">
 			<description>wcf.guthaben.prices.dailytax.desc</description>
 			<price>GUTHABEN_TAX_PER_DAY</price>

@@ -48,6 +48,13 @@ class CacheBuilderGuthabenMainpage implements CacheBuilder
 			}
 		}
 		
+		//remove empty tabs
+		foreach ($data['parents'] as $id => $parent)
+		{
+			if (count($data['items'][$parent['menuItemLink']]) == 0)
+				unset($data['parents'][$id]);
+		}
+		
 		return $data;
 	}
 }

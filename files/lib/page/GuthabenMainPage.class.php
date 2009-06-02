@@ -79,12 +79,6 @@ class GuthabenMainPage extends AbstractPage
 		}
 
 		$this->checkPermissions();
-
-		foreach ($this->menuItems['parents'] as $id => $parent)
-		{
-			if (count($this->menuItems['items'][$parent['menuItemLink']]) == 0)
-				unset($this->menuItems['parents'][$id]);
-		}
 	}
 
 	/**
