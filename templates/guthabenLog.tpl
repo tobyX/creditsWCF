@@ -10,12 +10,12 @@
 <div id="main">
 	
 	<ul class="breadCrumbs">
-		<li><a href="index.php?page=Index{@SID_ARG_2ND}"><img src="icon/indexS.png" alt="" /> <span>{PAGE_TITLE}</span></a> &raquo;</li>
-		<li><a href="index.php?page=guthabenMain{@SID_ARG_2ND}"><img src="icon/indexS.png" alt="" /> <span>{lang}wcf.guthaben.pagetitle{/lang}</span></a> &raquo;</li>
+		<li><a href="index.php?page=Index{@SID_ARG_2ND}"><img src="{icon}indexS.png{/icon}" alt="" /> <span>{PAGE_TITLE}</span></a> &raquo;</li>
+		<li><a href="index.php?page=guthabenMain{@SID_ARG_2ND}"><img src="{icon}guthabenMainS.png{/icon}" alt="" /> <span>{lang}wcf.guthaben.pagetitle{/lang}</span></a> &raquo;</li>
 	</ul>
 	
 	<div class="mainHeadline">
-		<img src="{@RELATIVE_WCF_DIR}icon/guthabenLogL.png" alt="" />
+		<img src="{icon}guthabenLogL.png{/icon}" alt="" />
 		<div class="headlineContainer">
 			<h2>{lang}wcf.guthaben.log.title{/lang}</h2>
 			<p>{lang}wcf.guthaben.log.description{/lang}</p>

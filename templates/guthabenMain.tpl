@@ -8,11 +8,11 @@
 
 <div id="main">
 	<ul class="breadCrumbs">
-		<li><a href="index.php?page=Index{@SID_ARG_2ND}"><img src="icon/indexS.png" alt="" /> <span>{PAGE_TITLE}</span></a> &raquo;</li>
+		<li><a href="index.php?page=Index{@SID_ARG_2ND}"><img src="{icon}indexS.png{/icon}" alt="" /> <span>{PAGE_TITLE}</span></a> &raquo;</li>
 	</ul>
 	
 	<div class="mainHeadline">
-		<img src="{@RELATIVE_WCF_DIR}icon/guthabenL.png" alt="" />
+		<img src="{icon}guthabenMainL.png{/icon}" alt="" />
 		<div class="headlineContainer">
 			<h2> {lang}wcf.guthaben.pagetitle{/lang}</h2>
 		</div>
@@ -40,7 +40,7 @@
 		{foreach from=$childItems item=link}
 			<div class="messageInner {cycle}">
 				<a href="index.php?{$link.menuItemLink}{@SID_ARG_2ND}">
-					{if !$link.menuItemIcon|empty}<img src="{@RELATIVE_WCF_DIR}{$link.menuItemIcon}" alt="" />{/if}
+					{if !$link.menuItemIcon|empty}<img src="{icon}{$link.menuItemIcon}{/icon}" alt="" />{/if}
 				</a>
 				<a href="index.php?{$link.menuItemLink}{@SID_ARG_2ND}">
 					{lang}{$link.menuItem}{/lang}

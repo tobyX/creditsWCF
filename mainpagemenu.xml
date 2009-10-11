@@ -3,23 +3,20 @@
 <data>
 	<import>
 		<userguthabenmainpage name="wcf.guthaben.mainpage.main">
-			<icon>icon/guthabenMainM.png</icon>
 			<link>mainPage</link>
 			<showorder>1</showorder>
 		</userguthabenmainpage>
 		<userguthabenmainpage name="wcf.guthaben.mainpage.games">
-			<icon>icon/guthabenMainM.png</icon>
 			<link>gamePage</link>
 			<showorder>2</showorder>
 		</userguthabenmainpage>
 		<userguthabenmainpage name="wcf.guthaben.mainpage.shop">
-			<icon>icon/guthabenMainM.png</icon>
 			<link>shopPage</link>
 			<showorder>3</showorder>
 		</userguthabenmainpage>
 
 		<userguthabenmainpage name="wcf.guthaben.mainpage.log">
-			<icon>icon/guthabenMainM.png</icon>
+			<icon>guthabenLogL.png</icon>
 			<link>page=guthabenLog</link>
 			<showorder>1</showorder>
 			<description>wcf.guthaben.mainpage.log.description</description>
@@ -28,7 +25,7 @@
 		</userguthabenmainpage>
 
 		<userguthabenmainpage name="wcf.guthaben.mainpage.transfer">
-			<icon>icon/guthabenMainM.png</icon>
+			<icon>guthabenTransferL.png</icon>
 			<link>form=guthabenTransfer</link>
 			<showorder>2</showorder>
 			<description>wcf.guthaben.mainpage.transfer.description</description>
@@ -37,7 +34,7 @@
 		</userguthabenmainpage>
 
 		<userguthabenmainpage name="wcf.guthaben.mainpage.forbes">
-			<icon>icon/guthabenMainM.png</icon>
+			<icon>guthabenForbesL.png</icon>
 			<link>page=guthabenForbes</link>
 			<showorder>3</showorder>
 			<description>wcf.guthaben.mainpage.forbes.description</description>
@@ -46,7 +43,7 @@
 		</userguthabenmainpage>
 
 		<userguthabenmainpage name="wcf.guthaben.mainpage.prices">
-			<icon>icon/guthabenMainM.png</icon>
+			<icon>guthabenPricesL.png</icon>
 			<link>page=guthabenPrices</link>
 			<showorder>1</showorder>
 			<description>wcf.guthaben.mainpage.prices.description</description>

@@ -161,8 +161,9 @@ class Guthaben
 
 		$editor = $user->getEditor();
 		$editor->updateOptions(array (
-			'guthaben' => ($user->guthaben - $sub)
-		));
+									'guthaben' => ($user->guthaben - $sub),
+									)
+							   );
 
 		$user->guthaben -= $sub;
 
