@@ -123,6 +123,7 @@
 		<item name="wcf.guthaben.forbes.description"><![CDATA[Eine Liste der Benutzer dieses Forums, sortiert nach Vermögen.]]></item>
 		<item name="wcf.guthaben.forbes.name"><![CDATA[Name]]></item>
 		<item name="wcf.guthaben.forbes.guthaben"><![CDATA[Vermögen]]></item>
+		<item name="wcf.guthaben.forbes.statistics"><![CDATA[{$items} Benutzer besitzen {@$allGuthaben}<br />Jeder Benutzer besitzt durchschnittlich {@$durchschnittGuthaben}<br />Die reichsten 10% der Benutzer besitzen {@$oberschichtGuthaben}% des Vermögens]]></item>
 	</category>
 
 	<category name="wcf.usersOnline">
