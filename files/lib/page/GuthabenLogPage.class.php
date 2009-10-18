@@ -13,7 +13,7 @@
  */
 
 require_once (WCF_DIR . 'lib/page/MultipleLinkPage.class.php');
-require_once (WCF_DIR . 'lib/page/util/menu/HeaderMenu.class.php');
+require_once (WCF_DIR . 'lib/page/util/menu/PageMenu.class.php');
 
 class GuthabenLogPage extends MultipleLinkPage
 {
@@ -133,7 +133,7 @@ class GuthabenLogPage extends MultipleLinkPage
 		}
 
 		// set active header menu item
-		HeaderMenu :: setActiveMenuItem('wcf.header.menu.guthabenmain');
+		PageMenu :: setActiveMenuItem('wcf.header.menu.guthabenmain');
 
 		parent :: show();
 	}

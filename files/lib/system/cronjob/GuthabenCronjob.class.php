@@ -31,8 +31,7 @@ class GuthabenCronjob implements Cronjob
 		
 		// get user ids
 		$sql = "SELECT	userID
-				FROM	wcf".WCF_N."_user
-				WHERE	banned = 0 AND lastActivityTime > ".(TIME_NOW - 8640000);
+				FROM	wcf" . WCF_N . "_user";
 		$result = WCF::getDB()->sendQuery($sql);
 		
 		while ($row = WCF::getDB()->fetchArray($result)) 

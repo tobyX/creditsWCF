@@ -237,7 +237,7 @@ class GuthabenForbesPage extends SortablePage
 			$this->allGuthaben = $row['alles'];
 			$this->durchschnittGuthaben = $this->allGuthaben / $this->items;
 			
-			$sql = "SELECT SUM(userOption111) AS reichste 
+			$sql = "SELECT SUM(userOption" . $optionID . ") AS reichste 
 					FROM (
 						SELECT 		userOption" . $optionID . "
 						FROM		wcf" . WCF_N . "_user_option_value
