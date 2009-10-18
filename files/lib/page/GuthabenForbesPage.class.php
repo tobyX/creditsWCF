@@ -235,6 +235,7 @@ class GuthabenForbesPage extends SortablePage
 			$row = WCF :: getDB()->getFirstRow($sql);
 		
 			$this->allGuthaben = $row['alles'];
+			
 			$this->durchschnittGuthaben = $this->allGuthaben / $this->items;
 			
 			$sql = "SELECT SUM(userOption" . $optionID . ") AS reichste 
@@ -247,7 +248,8 @@ class GuthabenForbesPage extends SortablePage
 			
 			$row = WCF :: getDB()->getFirstRow($sql);
 			
-			$this->oberschichtGuthaben = $row['reichste'] / ($this->allGuthaben / 100);
+			if ($this->allGuthaben)
+				$this->oberschichtGuthaben = $row['reichste'] / ($this->allGuthaben / 100);
 		}
 	}
 }
