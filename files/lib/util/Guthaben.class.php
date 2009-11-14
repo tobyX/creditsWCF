@@ -84,7 +84,7 @@ class Guthaben
 	 *
 	 * @return bool
 	 */
-	public function reset(User $user)
+	public static function reset(User $user)
 	{
 		$editor = $user->getEditor();
 		$editor->updateOptions(array (
@@ -109,7 +109,7 @@ class Guthaben
 	 *
 	 * @return bool
 	 */
-	public function add($add, $langvar, $text = '', $link = '', User $user = null)
+	public static function add($add, $langvar, $text = '', $link = '', User $user = null)
 	{
 		if ($user == null)
 		{
@@ -230,7 +230,7 @@ class Guthaben
 	 *
 	 * @param object user		a userobject
 	 */
-	public function compressLog(User $user = null)
+	public static function compressLog(User $user = null)
 	{
 		if ($user == null)
 		{
@@ -249,7 +249,7 @@ class Guthaben
 	 *
 	 * @param object user		a userobject
 	 */
-	public function dailyTax(User $user)
+	public static function dailyTax(User $user)
 	{
 		if (GUTHABEN_TAX_PER_DAY == 0)
 			return;
