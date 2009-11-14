@@ -21,7 +21,7 @@ class GuthabenCronjob implements Cronjob
 	 */
 	public function execute($data) 
 	{
-		if (!GUTHABEN_ENABLE_GLOBAL || (!GUTHABEN_TAX_PER_DAY && !GUTHABEN_ENABLE_AUTOCOMPRESS))
+		if (!GUTHABEN_ENABLE_GLOBAL)
 			return;
 		
 		if (file_exists(WCF_DIR.'cache/guthabenCronJobLock') && file_get_contents (WCF_DIR.'cache/guthabenCronJobLock') == date('Y-m-d'))
@@ -29,20 +29,38 @@ class GuthabenCronjob implements Cronjob
 		
 		file_put_contents (WCF_DIR.'cache/guthabenCronJobLock', date('Y-m-d'), LOCK_EX);
 		
-		// get user ids
-		$sql = "SELECT	userID
-				FROM	wcf" . WCF_N . "_user";
-		$result = WCF::getDB()->sendQuery($sql);
+		if (GUTHABEN_TAX_PER_DAY || GUTHABEN_ENABLE_AUTOCOMPRESS)
+		{	
+			// get user ids
+			$sql = "SELECT	userID
+					FROM	wcf" . WCF_N . "_user";
+			$result = WCF::getDB()->sendQuery($sql);
+			
+			while (false !== ($row = WCF::getDB()->fetchArray($result))) 
+			{
+				$user = new User($row['userID']);
+				
+				if (GUTHABEN_TAX_PER_DAY)
+					Guthaben :: dailyTax($user);
+				
+				if (GUTHABEN_ENABLE_AUTOCOMPRESS && date('d', TIME_NOW) == '15')
+					Guthaben :: compressLog($user);
+			}
+		}
 		
-		while ($row = WCF::getDB()->fetchArray($result)) 
+		if (GUTHABEN_EARN_PER_BIRTHDAY)
 		{
-			$user = new User($row['userID']);
-			
-			if (GUTHABEN_TAX_PER_DAY)
-				Guthaben :: dailyTax($user);
-			
-			if (GUTHABEN_ENABLE_AUTOCOMPRESS && date('d', TIME_NOW) == '15')
-				Guthaben :: compressLog($user);
+			//birthday
+			$sql = "SELECT		userID
+	                FROM 		wcf" . WCF_N . "_user_option_value
+	                WHERE 		useroption" . User::getUserOptionID('birthday') . " LIKE '%-" . date('m') . "-" . date('d') . "'";
+			$result = WCF::getDB()->sendQuery($sql);
+	
+			while (false !== ($row = WCF::getDB()->fetchArray($result))) 
+			{
+				$user = new User($row['userID']);
+				Guthaben :: add(GUTHABEN_EARN_PER_BIRTHDAY, 'wcf.guthaben.log.birthday', '', '', $user);
+			}
 		}
 	}
 }

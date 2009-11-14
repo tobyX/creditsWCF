@@ -24,6 +24,7 @@
 		<item name="wcf.guthaben.log.newpn"><![CDATA[Neue Private Nachricht:]]></item>
 		<item name="wcf.guthaben.log.deletepn"><![CDATA[Abzug für zurückgezogene private Nachricht:]]></item>
 		<item name="wcf.guthaben.log.newregister"><![CDATA[Gutschrift für Registrierung]]></item>
+		<item name="wcf.guthaben.log.birthday"><![CDATA[Gutschrift für Geburtstag]]></item>
 	</category>
 
 	<category name="wcf.acp.option">
@@ -43,6 +44,8 @@
 		<item name="wcf.acp.option.guthaben_earn_per_pn.description"><![CDATA[Jedem User wird diese Summe pro PN gutgeschrieben.]]></item>
 		<item name="wcf.acp.option.guthaben_earn_for_register"><![CDATA[Guthaben bei Registrierung]]></item>
 		<item name="wcf.acp.option.guthaben_earn_for_register.description"><![CDATA[Jedem User wird diese Summe bei der Registrierung gutgeschrieben.]]></item>
+		<item name="wcf.acp.option.guthaben_earn_per_birthday"><![CDATA[Guthaben für Geburtstag]]></item>
+		<item name="wcf.acp.option.guthaben_earn_per_birthday.description"><![CDATA[Jedem User wird diese Summe an seinem Geburtstag gutgeschrieben.]]></item>
 	</category>
 
 	<category name="wcf.acp.group">
