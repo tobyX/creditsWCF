@@ -19,11 +19,11 @@ require_once (WCF_DIR . 'lib/page/util/menu/PageMenu.class.php');
 class GuthabenTransferForm extends AbstractForm
 {
 	public $templateName = 'guthabenTransfer';
-	private $userID = 0;
-	private $transfer = 0;
-	private $text = '';
-	private $recipient = '';
-	private $moderativ = false;
+	public $userID = 0;
+	public $transfer = 0;
+	public $text = '';
+	public $recipient = '';
+	public $moderativ = false;
 
 	/**
 	 * @see Form::readFormParameters()
