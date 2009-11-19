@@ -115,6 +115,8 @@
 		<item name="wcf.guthaben.prices.earnpn.desc"><![CDATA[Dieser Betrag wird Ihnen pro versendeter privater Nachricht gutgeschrieben.]]></item>
 		<item name="wcf.guthaben.prices.earnregister"><![CDATA[Gutschrift bei Registrierung]]></item>
 		<item name="wcf.guthaben.prices.earnregister.desc"><![CDATA[Dieser Betrag wird jedem User bei der Registrierung gutgeschrieben.]]></item>
+		<item name="wcf.guthaben.prices.earnbirthday"><![CDATA[Gutschrift bei Geburtstag]]></item>
+		<item name="wcf.guthaben.prices.earnbirthday.desc"><![CDATA[Dieser Betrag wird jedem User an seinem Geburtstag gutgeschrieben.]]></item>
 	</category>
 
 	<category name="wcf.header.menu">

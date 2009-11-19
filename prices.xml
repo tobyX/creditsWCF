@@ -13,6 +13,11 @@
 			<price>GUTHABEN_EARN_FOR_REGISTER</price>
 		</guthabenprices>
 		
+		<guthabenprices name="wcf.guthaben.prices.earnbirthday">
+			<description>wcf.guthaben.prices.earnbirthday.desc</description>
+			<price>GUTHABEN_EARN_PER_BIRTHDAY</price>
+		</guthabenprices>
+		
 		<guthabenprices name="wcf.guthaben.prices.dailytax">
 			<description>wcf.guthaben.prices.dailytax.desc</description>
 			<price>GUTHABEN_TAX_PER_DAY</price>
