@@ -74,7 +74,7 @@
 		<item name="wcf.guthaben.profile"><![CDATA[Aktuelles Guthaben]]></item>
 		<item name="wcf.guthaben.currency"><![CDATA[E-Dollar]]></item>
 		<item name="wcf.guthaben.pagetitle"><![CDATA[Guthaben]]></item>
-		<item name="wcf.guthaben.copyright"><![CDATA[<a href="http://wbbmods.tobyf.de/trac/wiki/GuthabenPlugin">Plugin: <strong>UserGuthaben{if SHOW_VERSION_NUMBER} 0.8{/if}</strong></a>, entwickelt von <a href="http://www.enigma-forum.de"><strong>Toby</strong></a>]]></item>
+		<item name="wcf.guthaben.copyright"><![CDATA[<a href="http://wbbmods.tobyf.de/trac/wiki/GuthabenPlugin">Plugin: <strong>UserGuthaben{if SHOW_VERSION_NUMBER} 0.9{/if}</strong></a>, entwickelt von <a href="http://www.enigma-forum.de"><strong>Toby</strong></a>]]></item>
 	</category>
 
 	<category name="wcf.guthaben.transfer">
