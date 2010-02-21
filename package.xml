@@ -7,7 +7,7 @@
 		<isUnique>1</isUnique>
 		<packageDescription>Guthaben fürs WCF (Basispaket)</packageDescription>
 		<standalone>0</standalone>
-		<version>1.1_0.9.0 BETA 6</version>
+		<version>1.1_0.9.0 BETA 7</version>
 		<date>2009-10-13</date>
 		<plugin>com.woltlab.wcf</plugin>
 	</packageInformation>
@@ -39,7 +39,7 @@
 		<guthabenprices>prices.xml</guthabenprices>
 	</instructions>
 	
-	<instructions type="update" fromversion="0.8.7">
+	<instructions type="update" fromversion="0.8.6">
 		<files>files.tar</files>
 		<pagemenu>pagemenu.xml</pagemenu>
 		<languages languagecode="de">de.utf-8.xml</languages>
@@ -51,6 +51,7 @@
 		<files>files.tar</files>
 		<templates>templates.tar</templates>
 		<guthabenmainpage>mainpagemenu.xml</guthabenmainpage>
+		<pagemenu>pagemenu.xml</pagemenu>
 		<options>options.xml</options>
 		<languages languagecode="de">de.utf-8.xml</languages>
 		<languages languagecode="de-informal">de-informal.utf-8.xml</languages>
@@ -59,10 +60,21 @@
 	<instructions type="update" fromversion="1.1_0.9*">
 		<files>files.tar</files>
 		<templates>templates.tar</templates>
+		<pagemenu>pagemenu.xml</pagemenu>
 		<guthabenmainpage>mainpagemenu.xml</guthabenmainpage>
 		<options>options.xml</options>
 		<languages languagecode="de">de.utf-8.xml</languages>
 		<languages languagecode="de-informal">de-informal.utf-8.xml</languages>
+	</instructions>
+	
+	<instructions type="update" fromversion="1.0_0.9*">
+		<files>files.tar</files>
+		<templates>templates.tar</templates>
+		<options>options.xml</options>
+		<languages languagecode="de">de.utf-8.xml</languages>
+		<languages languagecode="de-informal">de-informal.utf-8.xml</languages>
+		<pagemenu>pagemenu.xml</pagemenu>
+		<guthabenmainpage>mainpagemenu.xml</guthabenmainpage>
 	</instructions>
 
 </package>
