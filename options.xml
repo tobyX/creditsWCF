@@ -1,29 +1,35 @@
 <?xml version="1.0"?>
-<!DOCTYPE data SYSTEM "http://www.woltlab.com/DTD/options.dtd">
-<data>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/option.xsd">
 	<import>
 		<categories>
 
-			<category name="guthaben"></category>			<category name="guthaben.general">
-				<parent>guthaben</parent>
+			<category name="credits"></category>			<category name="credits.global">
+				<parent>credits</parent>
 			</category>
-			<category name="guthaben.spend">
-				<parent>guthaben</parent>
+			<category name="credits.spend">
+				<parent>credits</parent>
 			</category>
-			<category name="guthaben.earn">
-				<parent>guthaben</parent>
+			<category name="credits.earn">
+				<parent>credits</parent>
 			</category>
 		</categories>
 
 		<options>
+			<!-- module -->
+			<option name="module_credits">
+				<categoryname>module.system</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			<!-- module -->
 
 			<!-- general -->
-			<option name="guthaben_enable_global">
+			<option name="credits_enable_autocompress">
 				<categoryname>guthaben.general</categoryname>
 				<optiontype>boolean</optiontype>
 				<defaultvalue>1</defaultvalue>
 			</option>
-			<option name="guthaben_enable_autocompress">
+			<option name="credits_allow_negativ">
 				<categoryname>guthaben.general</categoryname>
 				<optiontype>boolean</optiontype>
 				<defaultvalue>1</defaultvalue>
@@ -31,26 +37,26 @@
 			<!-- general -->
 
 			<!-- spend -->
-			<option name="guthaben_tax_per_day">
-				<categoryname>guthaben.spend</categoryname>
+			<option name="credits_tax_per_day">
+				<categoryname>credits.spend</categoryname>
 				<optiontype>float</optiontype>
 				<defaultvalue>5</defaultvalue>
 			</option>
 			<!-- spend -->
 
 			<!-- earn -->
-			<option name="guthaben_earn_per_pn">
-				<categoryname>guthaben.earn</categoryname>
+			<option name="credits_earn_per_pn">
+				<categoryname>credits.earn</categoryname>
 				<optiontype>integer</optiontype>
 				<defaultvalue>5</defaultvalue>
 			</option>
-			<option name="guthaben_earn_for_register">
-				<categoryname>guthaben.earn</categoryname>
+			<option name="credits_earn_for_register">
+				<categoryname>credits.earn</categoryname>
 				<optiontype>integer</optiontype>
 				<defaultvalue>500</defaultvalue>
 			</option>
-			<option name="guthaben_earn_per_birthday">
-				<categoryname>guthaben.earn</categoryname>
+			<option name="credits_earn_per_birthday">
+				<categoryname>credits.earn</categoryname>
 				<optiontype>integer</optiontype>
 				<defaultvalue>350</defaultvalue>
 			</option>

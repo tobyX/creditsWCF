@@ -1,80 +1,40 @@
 <?xml version="1.0"?>
-<!DOCTYPE package SYSTEM "DTD/package.dtd">
-<package name="com.toby.wcf.guthaben">
+<package name="com.toby.wcf.credits" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/package.xsd">
 
-	<packageInformation>
-		<packageName>GuthabenBasispaket</packageName>
-		<isUnique>1</isUnique>
-		<packageDescription>Guthaben fürs WCF (Basispaket)</packageDescription>
-		<standalone>0</standalone>
-		<version>1.1_0.9.0 BETA 7</version>
-		<date>2009-10-13</date>
-		<plugin>com.woltlab.wcf</plugin>
-	</packageInformation>
+	<packageinformation>
+		<packagename><![CDATA[Credits Basepackage WCF]]></packagename>
+		<packagename language="de"><![CDATA[Guthaben Basispaket WCF]]></packagename>
+		<packagedescription><![CDATA[a credit-system for an WBB forum, only meant to be some small game - WCF plugin]]></packagedescription>
+		<packagedescription language="de"><![CDATA[Ein Guthaben-System für ein WBB-Forum, nur als Spielerei gedacht - WCF-Paket]]></packagedescription>
+		<isapplication>0</isapplication>
+		<version>2.0.0 Alpha 1</version>
+		<date>2013-09-16</date>
+		<license><![CDATA[CC BY-NC-ND 3.0 <http://creativecommons.org/licenses/by-nc-nd/3.0/>]]></license>
+	</packageinformation>
 
-	<authorInformation>
-		<author>Tobias Friebel</author>
-		<authorURL>http://wbbmods.tobyf.de/trac/wiki/GuthabenBasispaket</authorURL>
-	</authorInformation>
+	<authorinformation>
+		<author><![CDATA[Tobias Friebel]]></author>
+		<authorurl><![CDATA[https://github.com/tobyX/creditsWCF]]></authorurl>
+	</authorinformation>
 
 	<requiredpackages>
-		<requiredpackage minversion="1.1.0">com.woltlab.wcf</requiredpackage>
+		<requiredpackage minversion="2.0.0 Alpha 1">com.woltlab.wcf</requiredpackage>
 	</requiredpackages>
 
 	<instructions type="install">
-		<languages languagecode="de">de.utf-8.xml</languages>
-		<languages languagecode="de-informal">de-informal.utf-8.xml</languages>
-		<files>files.tar</files>
-		<options>options.xml</options>
-		<cronjobs>cronjobs.xml</cronjobs>
-		<sql>install.sql</sql>
-		<eventlistener>eventlistener.xml</eventlistener>
-		<templates>templates.tar</templates>
-		<pagemenu>pagemenu.xml</pagemenu>
-		<pagelocation>pagelocation.xml</pagelocation>
-		<groupoptions>groupoptions.xml</groupoptions>
-		<packageinstallationplugins>pip.tar</packageinstallationplugins>
-		<useroptions>useroptions.xml</useroptions>
-		<guthabenmainpage>mainpagemenu.xml</guthabenmainpage>
-		<guthabenprices>prices.xml</guthabenprices>
-	</instructions>
-	
-	<instructions type="update" fromversion="0.8.6">
-		<files>files.tar</files>
-		<pagemenu>pagemenu.xml</pagemenu>
-		<languages languagecode="de">de.utf-8.xml</languages>
-		<languages languagecode="de-informal">de-informal.utf-8.xml</languages>
-		<options>options.xml</options>
-	</instructions>
-	
-	<instructions type="update" fromversion="0.9*">
-		<files>files.tar</files>
-		<templates>templates.tar</templates>
-		<guthabenmainpage>mainpagemenu.xml</guthabenmainpage>
-		<pagemenu>pagemenu.xml</pagemenu>
-		<options>options.xml</options>
-		<languages languagecode="de">de.utf-8.xml</languages>
-		<languages languagecode="de-informal">de-informal.utf-8.xml</languages>
-	</instructions>
-	
-	<instructions type="update" fromversion="1.1_0.9*">
-		<files>files.tar</files>
-		<templates>templates.tar</templates>
-		<pagemenu>pagemenu.xml</pagemenu>
-		<guthabenmainpage>mainpagemenu.xml</guthabenmainpage>
-		<options>options.xml</options>
-		<languages languagecode="de">de.utf-8.xml</languages>
-		<languages languagecode="de-informal">de-informal.utf-8.xml</languages>
-	</instructions>
-	
-	<instructions type="update" fromversion="1.0_0.9*">
-		<files>files.tar</files>
-		<templates>templates.tar</templates>
-		<options>options.xml</options>
-		<languages languagecode="de">de.utf-8.xml</languages>
-		<languages languagecode="de-informal">de-informal.utf-8.xml</languages>
-		<pagemenu>pagemenu.xml</pagemenu>
-		<guthabenmainpage>mainpagemenu.xml</guthabenmainpage>
+		<instruction type="file">files.tar</instruction>
+		<instruction type="template">templates.tar</instruction>
+		<instruction type="language">language/*.xml</instruction>
+		<instruction type="option">options.xml</instruction>
+		<instruction type="sql">install.sql</instruction>
+		<instruction type="eventListener">eventlistener.xml</instruction>
+		<instruction type="userOption">useroptions.xml</instruction>
+		<!--  <instruction type="pagemenu">pagemenu.xml</instruction>
+		<instruction type="cronjob">cronjobs.xml</instruction>
+		<instruction type="usergroupoption">groupoptions.xml</instruction>
+		<instruction type="pip">pip.tar</instruction>
+		<instruction type="creditsmainpage">mainpagemenu.xml</instruction>
+		<instruction type="creditsprices">prices.xml</instruction>-->
 	</instructions>
 
 </package>

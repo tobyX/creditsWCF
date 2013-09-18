@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language languagecode="de" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd">
+
+	<category name="wcf.credits.log">
+		<item name="wcf.credits.log.title"><![CDATA[Kontoauszüge]]></item>
+		<item name="wcf.credits.log.description"><![CDATA[Hier können Sie Ihre Kontoauzüge sehen, in denen alle Ihre Vorgänge mit Ihrem Guthaben verzeichnet sind.]]></item>
+		<item name="wcf.credits.log.currentcredits"><![CDATA[Gesamter Umsatz:]]></item>
+		<item name="wcf.credits.log.compress"><![CDATA[Zusammenfassung alter Kontoauszüge]]></item>
+		<item name="wcf.credits.log.transferto"><![CDATA[Überweisung an]]></item>
+		<item name="wcf.credits.log.transferfrom"><![CDATA[Überweisung von]]></item>
+		<item name="wcf.credits.log.loginfo"><![CDATA[Buchungsinformation]]></item>
+		<item name="wcf.credits.log.change"><![CDATA[Umsatz]]></item>
+		<item name="wcf.credits.log.date"><![CDATA[Datum]]></item>
+		<item name="wcf.credits.log.dailytax"><![CDATA[Tägliche Steuer]]></item>
+        <item name="wcf.credits.log.id"><![CDATA[Buchungsnummer]]></item>
+        <item name="wcf.credits.log.time"><![CDATA[Buchungsdatum]]></item>
+        <item name="wcf.credits.log.desc"><![CDATA[Buchungsbeschreibung]]></item>
+		<item name="wcf.credits.log.nolog"><![CDATA[Keine Buchungen]]></item>
+		<item name="wcf.credits.log.pagesum"><![CDATA[Übertrag]]></item>
+		<item name="wcf.credits.log.allsum"><![CDATA[Gesamter Umsatz]]></item>
+		<item name="wcf.credits.log.reset"><![CDATA[Guthaben zurückgesetzt]]></item>
+		<item name="wcf.credits.log.moderativ"><![CDATA[Moderative Überweisung von]]></item>
+		<item name="wcf.credits.log.newpn"><![CDATA[Neue Private Nachricht:]]></item>
+		<item name="wcf.credits.log.deletepn"><![CDATA[Abzug für zurückgezogene private Nachricht:]]></item>
+		<item name="wcf.credits.log.newregister"><![CDATA[Gutschrift für Registrierung]]></item>
+		<item name="wcf.credits.log.birthday"><![CDATA[Gutschrift für Geburtstag]]></item>
+	</category>
+
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.credits"><![CDATA[Guthaben]]></item>
+		<item name="wcf.acp.option.category.credits.description"><![CDATA[Einstellungen für das Guthabensystem]]></item>
+		<item name="wcf.acp.option.category.credits.general"><![CDATA[Guthaben global]]></item>
+		<item name="wcf.acp.option.category.credits.general.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.module_credits"><![CDATA[Guthaben aktivieren]]></item>
+		<item name="wcf.acp.option.module_credits.description"><![CDATA[Aktiviert das Guthaben-Modul.]]></item>
+		<item name="wcf.acp.option.category.credits.spend"><![CDATA[Abgaben]]></item>
+		<item name="wcf.acp.option.category.credits.earn"><![CDATA[Einkünfte]]></item>
+		<item name="wcf.acp.option.credits_tax_per_day"><![CDATA[Steuern pro Tag]]></item>
+		<item name="wcf.acp.option.credits_tax_per_day.description"><![CDATA[Jedem User wird dieser Prozentsatz von seinem Guthaben jeden Tag abgezogen. User die gesperrt sind oder mehr als 100 Tage nicht aktiv waren sind davon nicht betroffen. Es können auch Werte kleiner als 1 angegeben werden, z.B. 0,5.]]></item>
+		<item name="wcf.acp.option.credits_enable_autocompress"><![CDATA[Automatische Komprimierung von Logeinträgen]]></item>
+		<item name="wcf.acp.option.credits_enable_autocompress.description"><![CDATA[Am 15. eines jeden Monats werden die Logeinträge automatisch komprimiert]]></item>
+		<item name="wcf.acp.option.credits_earn_per_pn"><![CDATA[Guthaben per PN]]></item>
+		<item name="wcf.acp.option.credits_earn_per_pn.description"><![CDATA[Jedem User wird diese Summe pro PN gutgeschrieben.]]></item>
+		<item name="wcf.acp.option.credits_earn_for_register"><![CDATA[Guthaben bei Registrierung]]></item>
+		<item name="wcf.acp.option.credits_earn_for_register.description"><![CDATA[Jedem User wird diese Summe bei der Registrierung gutgeschrieben.]]></item>
+		<item name="wcf.acp.option.credits_earn_per_birthday"><![CDATA[Guthaben für Geburtstag]]></item>
+		<item name="wcf.acp.option.credits_earn_per_birthday.description"><![CDATA[Jedem User wird diese Summe an seinem Geburtstag gutgeschrieben.]]></item>
+	</category>
+
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.category.credits"><![CDATA[Guthabenrechte]]></item>
+		<item name="wcf.acp.group.option.category.credits.rights"><![CDATA[Generell]]></item>
+		<item name="wcf.acp.group.option.category.credits.transfer"><![CDATA[Überweisungen]]></item>
+		<item name="wcf.acp.group.option.category.credits.moderation"><![CDATA[Moderation]]></item>
+		<item name="wcf.acp.group.option.category.credits.rights.description"><![CDATA[Generelle Guthabenrechte]]></item>
+		<item name="wcf.acp.group.option.credits.canuse"><![CDATA[Kann Guthabensystem benutzen]]></item>
+		<item name="wcf.acp.group.option.credits.canuse.description"><![CDATA[]]></item>
+		<item name="wcf.acp.group.option.credits.log.canuse"><![CDATA[Kann Kontoauszüge einsehen]]></item>
+		<item name="wcf.acp.group.option.credits.log.canuse.description"><![CDATA[]]></item>
+		<item name="wcf.acp.group.option.credits.forbes.canuse"><![CDATA[Kann Forbesliste sehen]]></item>
+		<item name="wcf.acp.group.option.credits.forbes.canuse.description"><![CDATA[Betrifft nur den Menüpunkt im Guthabenmenü]]></item>
+		<item name="wcf.acp.group.option.category.credits.transfer.description"><![CDATA[Einschränkungen des Überweisungssystems]]></item>
+		<item name="wcf.acp.group.option.credits.transfer.canuse"><![CDATA[Kann Überweisungen tätigen]]></item>
+		<item name="wcf.acp.group.option.credits.transfer.canuse.description"><![CDATA[]]></item>
+		<item name="wcf.acp.group.option.credits.transfer.canreceive"><![CDATA[Kann Überweisungen empfangen]]></item>
+		<item name="wcf.acp.group.option.credits.transfer.canreceive.description"><![CDATA[Dürfen Mitglieder dieser Gruppe Überweisungen empfangen?]]></item>
+		<item name="wcf.acp.group.option.category.credits.moderation.description"><![CDATA[Besondere Rechte für Moderatoren]]></item>
+		<item name="wcf.acp.group.option.credits.moderation.cantransfer"><![CDATA[Kann moderative Überweisungen tätigen]]></item>
+		<item name="wcf.acp.group.option.credits.moderation.cantransfer.description"><![CDATA[Mitglieder dieser Gruppe können Überweisungen aus dem Nichts tätigen oder anderen sogar per Überweisung Guthaben abziehen.]]></item>
+	</category>
+
+	<category name="wcf.credits">
+		<item name="wcf.credits.profile"><![CDATA[Aktuelles Guthaben]]></item>
+		<item name="wcf.credits.currency"><![CDATA[{$credits} E-Dollar]]></item>
+		<item name="wcf.credits.pagetitle"><![CDATA[Guthaben]]></item>
+		<item name="wcf.credits.copyright"><![CDATA[<a href="http://wbbmods.tobyf.de/trac/wiki/GuthabenPlugin">Plugin: <strong>UserGuthaben{if SHOW_VERSION_NUMBER} 0.9{/if}</strong></a>, entwickelt von <a href="http://www.enigma-forum.de"><strong>Toby</strong></a>]]></item>
+	</category>
+
+	<category name="wcf.credits.transfer">
+		<item name="wcf.credits.transfer"><![CDATA[Überweisung]]></item>
+		<item name="wcf.credits.transfer.title"><![CDATA[Überweisung]]></item>
+		<item name="wcf.credits.transfer.recipient"><![CDATA[Empfänger]]></item>
+		<item name="wcf.credits.transfer.value"><![CDATA[Betrag]]></item>
+		<item name="wcf.credits.transfer.description"><![CDATA[Hiermit können Sie Guthaben an andere Benutzer überweisen.]]></item>
+		<item name="wcf.credits.transfer.moderativ"><![CDATA[Moderative Überweisung]]></item>
+		<item name="wcf.credits.transfer.tomutch"><![CDATA[Sie können nicht mehr überweisen als Sie haben!]]></item>
+		<item name="wcf.credits.transfer.cannotreceive"><![CDATA[{$error.username} kann keine Überweisungen empfangen!]]></item>
+		<item name="wcf.credits.transfer.purpose"><![CDATA[Verwendungszweck]]></item>
+	</category>
+
+	<category name="wcf.credits.mainpage">
+		<item name="wcf.credits.mainpage.main"><![CDATA[Guthaben]]></item>
+		<item name="wcf.credits.mainpage.games"><![CDATA[Spiele]]></item>
+		<item name="wcf.credits.mainpage.shop"><![CDATA[Shop]]></item>
+		<item name="wcf.credits.mainpage.transfer"><![CDATA[Guthaben überweisen]]></item>
+		<item name="wcf.credits.mainpage.transfer.description"><![CDATA[Hier können Sie Ihr Guthaben an andere Mitglieder überweisen.]]></item>
+		<item name="wcf.credits.mainpage.log"><![CDATA[Kontoauszüge]]></item>
+		<item name="wcf.credits.mainpage.log.description"><![CDATA[Hier können Sie Ihre Kontoauzüge sehen, in denen alle Ihre Vorgänge mit Ihrem Guthaben verzeichnet sind.]]></item>
+		<item name="wcf.credits.mainpage.forbes"><![CDATA[Forbesliste]]></item>
+		<item name="wcf.credits.mainpage.forbes.description"><![CDATA[Hier können Sie die Vermögen aller einsehen.]]></item>
+		<item name="wcf.credits.mainpage.prices"><![CDATA[Preise und Einkommen]]></item>
+		<item name="wcf.credits.mainpage.prices.description"><![CDATA[Hier können Sie die Verdienstmöglichkeiten und Preise für einzelne Aktionen im Forum einsehen.]]></item>
+	</category>
+
+	<category name="wcf.credits.prices">
+		<item name="wcf.credits.prices.title"><![CDATA[Preise und Einkommen]]></item>
+		<item name="wcf.credits.prices.desc"><![CDATA[Hier können Sie die Verdienstmöglichkeiten und Preise für einzelne Aktionen im Forum einsehen.]]></item>
+		<item name="wcf.credits.prices.dailytax"><![CDATA[Steuer]]></item>
+		<item name="wcf.credits.prices.dailytax.desc"><![CDATA[Die Steuer wird täglich erhoben und prozentual abgeführt.]]></item>
+		<item name="wcf.credits.prices.item"><![CDATA[Vorgang]]></item>
+		<item name="wcf.credits.prices.itemdesc"><![CDATA[Beschreibung des Vorgangs]]></item>
+		<item name="wcf.credits.prices.price"><![CDATA[Preis]]></item>
+		<item name="wcf.credits.prices.earnpn"><![CDATA[Einkommen per PN]]></item>
+		<item name="wcf.credits.prices.earnpn.desc"><![CDATA[Dieser Betrag wird Ihnen pro versendeter privater Nachricht gutgeschrieben.]]></item>
+		<item name="wcf.credits.prices.earnregister"><![CDATA[Gutschrift bei Registrierung]]></item>
+		<item name="wcf.credits.prices.earnregister.desc"><![CDATA[Dieser Betrag wird jedem User bei der Registrierung gutgeschrieben.]]></item>
+		<item name="wcf.credits.prices.earnbirthday"><![CDATA[Gutschrift bei Geburtstag]]></item>
+		<item name="wcf.credits.prices.earnbirthday.desc"><![CDATA[Dieser Betrag wird jedem User an seinem Geburtstag gutgeschrieben.]]></item>
+	</category>
+
+	<category name="wcf.header.menu">
+		<item name="wcf.header.menu.creditsmain"><![CDATA[Guthaben]]></item>
+	</category>
+
+	<category name="wcf.credits.forbes">
+		<item name="wcf.credits.forbes.title"><![CDATA[Forbes Liste]]></item>
+		<item name="wcf.credits.forbes.description"><![CDATA[Eine Liste der Benutzer dieses Forums, sortiert nach Vermögen.]]></item>
+		<item name="wcf.credits.forbes.name"><![CDATA[Name]]></item>
+		<item name="wcf.credits.forbes.credits"><![CDATA[Vermögen]]></item>
+		<item name="wcf.credits.forbes.statistics"><![CDATA[{$items} Benutzer besitzen {@$allGuthaben}<br />Damit besitzt jeder Benutzer durchschnittlich {@$durchschnittGuthaben}<br />Die reichsten 10% der Benutzer besitzen {@$oberschichtGuthaben}% des Vermögens]]></item>
+	</category>
+
+	<category name="wcf.usersOnline">
+		<item name="wcf.usersOnline.location.credits.main"><![CDATA[<a href="index.php?page=GuthabenMain{SID_ARG_2ND}">Guthaben</a>]]></item>
+		<item name="wcf.usersOnline.location.credits.transfer"><![CDATA[<a href="index.php?page=GuthabenTransfer{SID_ARG_2ND}">Guthaben überweisen</a>]]></item>
+		<item name="wcf.usersOnline.location.credits.log"><![CDATA[<a href="index.php?page=GuthabenLog{SID_ARG_2ND}">Kontoauszüge</a>]]></item>
+		<item name="wcf.usersOnline.location.credits.prices"><![CDATA[<a href="index.php?page=GuthabenPrices{SID_ARG_2ND}">Preise</a>]]></item>
+	</category>
+
+	<category name="wcf.user.option">
+		<item name="wcf.user.option.credits"><![CDATA[Guthaben]]></item>
+		<item name="wcf.user.option.credits.description"><![CDATA[Hier können Sie das Guthaben des Benutzers verändern.]]></item>
+	</category>
+
+</language>

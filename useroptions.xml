@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
-<!DOCTYPE data SYSTEM "http://www.woltlab.com/DTD/options.dtd">
-<data>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/userOption.xsd">
+
 	<import>
+
 		<options>
 
-			<option name="guthaben">
+			<option name="credits">
 				<categoryname>profile.personal</categoryname>
-				<optiontype>integer</optiontype>
-				<outputclass>UserOptionOutputGuthaben</outputclass>
-				<visible>0</visible>
-				<editable>3</editable>
+				<optiontype>float</optiontype>
+				<outputclass>wcf\system\option\user\CreditsUserOptionOutput</outputclass>
+				<visible>15</visible>
+				<editable>0</editable>
 				<defaultvalue>0</defaultvalue>
 			</option>
 
 		</options>
 	</import>
-
 </data>
