@@ -1,100 +1,43 @@
 <?php
 namespace wcf\page;
-use wcf\system\WCF;
 
-class CreditsMainPage extends AbstractPage
-{
-	public $menuItems = null;
-	public $templateName = 'creditsMain';
+class CreditsMainPage extends AbstractPage {
+	/**
+	 * @see	wcf\page\AbstractPage::$activeMenuItem
+	 */
+	public $activeMenuItem = 'wcf.header.menu.credits';
 
 	/**
-	 * Loads cached menu items.
+	 * @see	wcf\page\AbstractPage::$enableTracking
 	 */
-	protected function loadCache ()
-	{
-		// call loadCache event
-		EventHandler :: fireAction($this, 'loadCache');
+	public $enableTracking = true;
 
-		WCF :: getCache()->addResource('guthabenMainPage-' . PACKAGE_ID, WCF_DIR . 'cache/cache.guthabenMainPage-' . PACKAGE_ID . '.php', WCF_DIR . 'lib/system/cache/CacheBuilderGuthabenMainpage.class.php');
-		$this->menuItems = WCF :: getCache()->get('guthabenMainPage-' . PACKAGE_ID);
+	/**
+	 * @see	wcf\page\AbstractPage::$neededModules
+	 */
+	public $neededModules = array('MODULE_CREDITS');
+
+	/**
+	 * list of the latest entries
+	 * @var	blog\data\entry\ViewableEntryList
+	 */
+	public $entryList = null;
+
+	/**
+	 * @see	wcf\page\IPage::readData()
+	 */
+	public function readData() {
+		parent::readData();
+
+
 	}
 
 	/**
-	 * Checks the permissions of the menu items.
-	 * Removes items without permission.
+	 * @see	wcf\page\IPage::assignVariables()
 	 */
-	protected function checkPermissions ()
-	{
-		foreach ($this->menuItems['items'][$this->action] as $key => $item)
-		{
-			$hasPermission = true;
-			// check the permission of this item for the active user
-			if (!empty($item['permissions']))
-			{
-				$hasPermission = false;
-				$permissions = explode(',', $item['permissions']);
-				foreach ($permissions as $permission)
-				{
-					if (WCF :: getUser()->getPermission($permission))
-					{
-						$hasPermission = true;
-						break;
-					}
-				}
-			}
+	public function assignVariables() {
+		parent::assignVariables();
 
-			if (!$hasPermission)
-			{
-				// remove this item
-				unset($this->menuItems['items'][$this->action][$key]);
-			}
-		}
-	}
 
-	/**
-	 * @see Page::readData()
-	 */
-	public function readData()
-	{
-		parent :: readData();
-
-		$this->loadCache();
-
-		if (empty($this->action))
-		{
-			$this->action = 'mainPage';
-		}
-
-		$this->checkPermissions();
-	}
-
-	/**
-	 * @see Page::assignVariables()
-	 */
-	public function assignVariables ()
-	{
-		parent :: assignVariables();
-
-		WCF :: getTPL()->assign('parentItems', $this->menuItems['parents']);
-		WCF :: getTPL()->assign('childItems', $this->menuItems['items'][$this->action]);
-		WCF :: getTPL()->assign('activeParent', $this->action);
-	}
-
-	/**
-	 * @see Page::show()
-	 */
-	public function show ()
-	{
-		if (!WCF :: getUser()->userID || !WCF :: getUser()->getPermission('guthaben.canuse'))
-		{
-			require_once (WCF_DIR . 'lib/system/exception/PermissionDeniedException.class.php');
-			throw new PermissionDeniedException();
-		}
-
-		// set active header menu item
-		PageMenu :: setActiveMenuItem('wcf.header.menu.guthabenmain');
-
-		parent :: show();
 	}
 }
-?>

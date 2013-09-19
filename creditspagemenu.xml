@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE import SYSTEM "DTD/import.dtd">
+<data>
+	<import>
+		<creditspage name="wcf.credits.page.log">
+			<icon>creditsLogL.png</icon>
+			<link>page=guthabenLog</link>
+			<showorder>1</showorder>
+			<description>wcf.credits.page.log.description</description>
+			<parent>mainPage</parent>
+			<permissions>credits.log.canuse</permissions>
+		</creditspage>
+
+		<creditspage name="wcf.credits.page.transfer">
+			<icon>creditsTransferL.png</icon>
+			<link>form=guthabenTransfer</link>
+			<showorder>2</showorder>
+			<description>wcf.credits.page.transfer.description</description>
+			<parent>mainPage</parent>
+			<permissions>guthaben.transfer.canuse</permissions>
+		</creditspage>
+
+		<creditspage name="wcf.credits.mainpage.forbes">
+			<icon>creditsForbesL.png</icon>
+			<link>page=guthabenForbes</link>
+			<showorder>3</showorder>
+			<description>wcf.credits.page.forbes.description</description>
+			<parent>mainPage</parent>
+			<permissions>credits.forbes.canuse</permissions>
+		</creditspage>
+
+		<creditspage name="wcf.credits.mainpage.prices">
+			<icon>guthabenPricesL.png</icon>
+			<link>page=creditsPrices</link>
+			<showorder>1</showorder>
+			<description>wcf.credits.mainpage.prices.description</description>
+			<parent>shopPage</parent>
+		</creditspage>
+	</import>
+</data>

@@ -1,11 +1,28 @@
 <?xml version="1.0"?>
-<!DOCTYPE import SYSTEM "DTD/import.dtd">
-<data>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/pagemnu.xsd">
+
 	<import>
-		<pagemenuitem name="wcf.header.menu.guthabenmain">
-			<icon>guthabenMainM.png</icon>
-			<link>index.php?page=guthabenMain</link>
-			<permissions>guthaben.canuse</permissions>
+
+		<pagemenuitem name="wcf.header.menu.credits">
+		    <controller><![CDATA[wcf\page\CreditsMainPage]]></controller>
+			<permissions>credits.canuse</permissions>
+			<position>header</position>
+			<options>module_credits</options>
 		</pagemenuitem>
+
+		<pagemenuitem name="wcf.header.menu.credits.games">
+			<controller><![CDATA[wcf\page\CreditsGamePage]]></controller>
+			<showorder>2</showorder>
+			<position>header</position>
+			<parent>wcf.header.menu.credits</parent>
+		</pagemenuitem>
+		<pagemenuitem name="wcf.header.menu.credits.shop">
+			<controller><![CDATA[wcf\page\CreditsShopPage]]></controller>
+			<showorder>3</showorder>
+			<position>header</position>
+			<parent>wcf.header.menu.credits</parent>
+		</pagemenuitem>
+
 	</import>
+
 </data>

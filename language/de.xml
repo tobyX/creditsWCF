@@ -119,7 +119,9 @@
 	</category>
 
 	<category name="wcf.header.menu">
-		<item name="wcf.header.menu.creditsmain"><![CDATA[Guthaben]]></item>
+		<item name="wcf.header.menu.credits"><![CDATA[Guthaben]]></item>
+		<item name="wcf.header.menu.credits.games"><![CDATA[Spiele]]></item>
+		<item name="wcf.header.menu.credits.shop"><![CDATA[Shop]]></item>
 	</category>
 
 	<category name="wcf.credits.forbes">
