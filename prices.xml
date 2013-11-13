@@ -2,28 +2,28 @@
 <!DOCTYPE import SYSTEM "DTD/import.dtd">
 <data>
 	<import>
-	
-		<guthabenprices name="wcf.guthaben.prices.earnpn">
-			<description>wcf.guthaben.prices.earnpn.desc</description>
-			<price>GUTHABEN_EARN_PER_PN</price>
-		</guthabenprices>
-		
-		<guthabenprices name="wcf.guthaben.prices.earnregister">
-			<description>wcf.guthaben.prices.earnregister.desc</description>
-			<price>GUTHABEN_EARN_FOR_REGISTER</price>
-		</guthabenprices>
-		
-		<guthabenprices name="wcf.guthaben.prices.earnbirthday">
-			<description>wcf.guthaben.prices.earnbirthday.desc</description>
-			<price>GUTHABEN_EARN_PER_BIRTHDAY</price>
-		</guthabenprices>
-		
-		<guthabenprices name="wcf.guthaben.prices.dailytax">
-			<description>wcf.guthaben.prices.dailytax.desc</description>
-			<price>GUTHABEN_TAX_PER_DAY</price>
+
+		<price name="wcf.credits.prices.earnpn">
+			<description>wcf.credits.prices.earnpn.desc</description>
+			<price>CREDITS_EARN_PER_PN</price>
+		</price>
+
+		<price name="wcf.credits.prices.earnregister">
+			<description>wcf.credits.prices.earnregister.desc</description>
+			<price>CREDITS_EARN_FOR_REGISTER</price>
+		</price>
+
+		<price name="wcf.credits.prices.earnbirthday">
+			<description>wcf.credits.prices.earnbirthday.desc</description>
+			<price>CREDITS_EARN_PER_BIRTHDAY</price>
+		</price>
+
+		<price name="wcf.credits.prices.dailytax">
+			<description>wcf.credits.prices.dailytax.desc</description>
+			<price>CREDITS_TAX_PER_DAY</price>
 			<isnegative>1</isnegative>
 			<currency>%</currency>
-		</guthabenprices>
+		</price>
 
 	</import>
 </data>

@@ -1,8 +1,9 @@
 <?php
-namespace wcf\system\option\user;
+namespace credits\system\option\user;
 use wcf\data\user\option\UserOption;
 use wcf\data\user\User;
-use wcf\util\CreditsUtil;
+use credits\util\CreditsUtil;
+use wcf\system\option\user\FloatUserOptionOutput;
 
 /**
  * User option output implementation for the output of a user's credits.

@@ -3,24 +3,11 @@
 
 	<import>
 
-		<pagemenuitem name="wcf.header.menu.credits">
-		    <controller><![CDATA[wcf\page\CreditsMainPage]]></controller>
+		<pagemenuitem name="credits.header.menu.credits">
+		    <controller><![CDATA[credits\page\MainPage]]></controller>
 			<permissions>credits.canuse</permissions>
 			<position>header</position>
 			<options>module_credits</options>
-		</pagemenuitem>
-
-		<pagemenuitem name="wcf.header.menu.credits.games">
-			<controller><![CDATA[wcf\page\CreditsGamePage]]></controller>
-			<showorder>2</showorder>
-			<position>header</position>
-			<parent>wcf.header.menu.credits</parent>
-		</pagemenuitem>
-		<pagemenuitem name="wcf.header.menu.credits.shop">
-			<controller><![CDATA[wcf\page\CreditsShopPage]]></controller>
-			<showorder>3</showorder>
-			<position>header</position>
-			<parent>wcf.header.menu.credits</parent>
 		</pagemenuitem>
 
 	</import>

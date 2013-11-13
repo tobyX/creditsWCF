@@ -6,7 +6,7 @@
 		<eventlistener>
 			<eventclassname>wcf\form\ConversationAddForm</eventclassname>
 			<eventname>saved</eventname>
-			<listenerclassname>wcf\system\event\listener\CreditsConversationListener</listenerclassname>
+			<listenerclassname>credits\system\event\listener\ConversationAddListener</listenerclassname>
 			<environment>user</environment>
 			<inherit>0</inherit>
 		</eventlistener>
@@ -14,7 +14,7 @@
 		<eventlistener>
 			<eventclassname>wcf\form\RegisterActivationForm</eventclassname>
 			<eventname>saved</eventname>
-			<listenerclassname>wcf\system\event\listener\CreditsRegisterListener</listenerclassname>
+			<listenerclassname>credits\system\event\listener\RegisterActivationListener</listenerclassname>
 			<environment>user</environment>
 			<inherit>0</inherit>
 		</eventlistener>

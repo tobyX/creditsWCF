@@ -1,15 +1,14 @@
 <?xml version="1.0"?>
-<package name="com.toby.wcf.credits" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/package.xsd">
+<package name="com.toby.credits" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/package.xsd">
 
 	<packageinformation>
-		<packagename><![CDATA[Credits Basepackage WCF]]></packagename>
-		<packagename language="de"><![CDATA[Guthaben Basispaket WCF]]></packagename>
-		<packagedescription><![CDATA[a credit-system for an WBB forum, only meant to be some small game - WCF plugin]]></packagedescription>
-		<packagedescription language="de"><![CDATA[Ein Guthaben-System für ein WBB-Forum, nur als Spielerei gedacht - WCF-Paket]]></packagedescription>
-		<isapplication>0</isapplication>
+		<packagename><![CDATA[Credits]]></packagename>
+		<packagename language="de"><![CDATA[Guthaben]]></packagename>
+		<packagedescription><![CDATA[a credit-system for WCF]]></packagedescription>
+		<packagedescription language="de"><![CDATA[Ein Guthaben-System für das WCF]]></packagedescription>
+		<isapplication>1</isapplication>
 		<version>2.0.0 Alpha 1</version>
 		<date>2013-09-16</date>
-		<license><![CDATA[CC BY-NC-ND 3.0 <http://creativecommons.org/licenses/by-nc-nd/3.0/>]]></license>
 	</packageinformation>
 
 	<authorinformation>
@@ -29,8 +28,8 @@
 		<instruction type="sql">install.sql</instruction>
 		<instruction type="eventListener">eventlistener.xml</instruction>
 		<instruction type="userOption">useroptions.xml</instruction>
-		<!--  <instruction type="pagemenu">pagemenu.xml</instruction>
-		<instruction type="cronjob">cronjobs.xml</instruction>
+		<instruction type="pagemenu">pagemenu.xml</instruction>
+		<!--  <instruction type="cronjob">cronjobs.xml</instruction>
 		<instruction type="usergroupoption">groupoptions.xml</instruction>
 		<instruction type="pip">pip.tar</instruction>
 		<instruction type="creditsmainpage">mainpagemenu.xml</instruction>

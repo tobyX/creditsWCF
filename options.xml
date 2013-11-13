@@ -24,25 +24,12 @@
 			<!-- module -->
 
 			<!-- general -->
-			<option name="credits_enable_autocompress">
-				<categoryname>guthaben.general</categoryname>
-				<optiontype>boolean</optiontype>
-				<defaultvalue>1</defaultvalue>
-			</option>
 			<option name="credits_allow_negativ">
 				<categoryname>guthaben.general</categoryname>
 				<optiontype>boolean</optiontype>
 				<defaultvalue>1</defaultvalue>
 			</option>
 			<!-- general -->
-
-			<!-- spend -->
-			<option name="credits_tax_per_day">
-				<categoryname>credits.spend</categoryname>
-				<optiontype>float</optiontype>
-				<defaultvalue>5</defaultvalue>
-			</option>
-			<!-- spend -->
 
 			<!-- earn -->
 			<option name="credits_earn_per_pn">

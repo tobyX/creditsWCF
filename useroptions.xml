@@ -8,7 +8,7 @@
 			<option name="credits">
 				<categoryname>profile.personal</categoryname>
 				<optiontype>float</optiontype>
-				<outputclass>wcf\system\option\user\CreditsUserOptionOutput</outputclass>
+				<outputclass>credits\system\option\user\CreditsUserOptionOutput</outputclass>
 				<visible>15</visible>
 				<editable>0</editable>
 				<defaultvalue>0</defaultvalue>

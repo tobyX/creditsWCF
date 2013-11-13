@@ -1,19 +1,19 @@
 <?php
-namespace wcf\system\credits;
+namespace credits\system\credits;
 use wcf\system\SingletonFactory;
 use wcf\data\user\User;
 use wcf\system\WCF;
-use wcf\data\creditsLog\CreditsLogAction;
 use wcf\data\user\UserAction;
 use wcf\util\CreditsUtil;
+use credits\data\statement\StatementAction;
 
 /**
  * Handle all credits actions
  *
- * @author		Tobias Friebel
+ * @author	Tobias Friebel
  * @copyright	2013 Tobias Friebel
- * @license		CC BY-NC-ND 3.0 http://creativecommons.org/licenses/by-nc-nd/3.0/
- * @package		com.toby.wcf.credits
+ * @license	CC BY-NC-ND 3.0 http://creativecommons.org/licenses/by-nc-nd/3.0/
+ * @package	com.toby.wcf.credits
  */
 class CreditsHandler extends SingletonFactory {
 
@@ -55,7 +55,7 @@ class CreditsHandler extends SingletonFactory {
 			'time' => TIME_NOW
 		);
 
-		$objectAction = new CreditsLogAction(array(), 'create',
+		$objectAction = new StatementAction(array(), 'create',
 				array('data' => $data));
 		$objectAction->executeAction();
 
@@ -79,8 +79,7 @@ class CreditsHandler extends SingletonFactory {
 
 		$credits = abs(floatval($credits));
 
-		if ($credits == 0 || (!CREDITS_ALLOW_NEGATIV &&
-				!$this->check($credits, $user)))
+		if ($credits == 0 || (!CREDITS_ALLOW_NEGATIV && !$this->check($credits, $user)))
 			return false;
 
 		$objectAction = new UserAction(array($user->userID), 'update', array(
@@ -101,7 +100,7 @@ class CreditsHandler extends SingletonFactory {
 			'time' => TIME_NOW
 		);
 
-		$objectAction = new CreditsLogAction(array(), 'create',
+		$objectAction = new StatementAction(array(), 'create',
 				array('data' => $data));
 		$objectAction->executeAction();
 
@@ -167,7 +166,7 @@ class CreditsHandler extends SingletonFactory {
 				'time' => TIME_NOW
 		);
 
-		$objectAction = new CreditsLogAction(array(), 'create',
+		$objectAction = new StatementAction(array(), 'create',
 				array('data' => $data));
 		$objectAction->executeAction();
 

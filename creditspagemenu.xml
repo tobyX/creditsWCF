@@ -4,7 +4,7 @@
 	<import>
 		<creditspage name="wcf.credits.page.log">
 			<icon>creditsLogL.png</icon>
-			<link>page=guthabenLog</link>
+			<controller><![CDATA[wcf\page\CreditsLogPage]]></controller>
 			<showorder>1</showorder>
 			<description>wcf.credits.page.log.description</description>
 			<parent>mainPage</parent>
@@ -13,7 +13,7 @@
 
 		<creditspage name="wcf.credits.page.transfer">
 			<icon>creditsTransferL.png</icon>
-			<link>form=guthabenTransfer</link>
+			<controller><![CDATA[wcf\form\CreditsTransferForm]]></controller>
 			<showorder>2</showorder>
 			<description>wcf.credits.page.transfer.description</description>
 			<parent>mainPage</parent>
@@ -22,7 +22,7 @@
 
 		<creditspage name="wcf.credits.mainpage.forbes">
 			<icon>creditsForbesL.png</icon>
-			<link>page=guthabenForbes</link>
+			<controller><![CDATA[wcf\page\CreditsForbesPage]]></controller>
 			<showorder>3</showorder>
 			<description>wcf.credits.page.forbes.description</description>
 			<parent>mainPage</parent>
@@ -31,7 +31,7 @@
 
 		<creditspage name="wcf.credits.mainpage.prices">
 			<icon>guthabenPricesL.png</icon>
-			<link>page=creditsPrices</link>
+			<controller><![CDATA[wcf\page\CreditsPricesPage]]></controller>
 			<showorder>1</showorder>
 			<description>wcf.credits.mainpage.prices.description</description>
 			<parent>shopPage</parent>

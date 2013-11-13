@@ -12,9 +12,9 @@
 		<item name="wcf.credits.log.change"><![CDATA[Umsatz]]></item>
 		<item name="wcf.credits.log.date"><![CDATA[Datum]]></item>
 		<item name="wcf.credits.log.dailytax"><![CDATA[Tägliche Steuer]]></item>
-        <item name="wcf.credits.log.id"><![CDATA[Buchungsnummer]]></item>
-        <item name="wcf.credits.log.time"><![CDATA[Buchungsdatum]]></item>
-        <item name="wcf.credits.log.desc"><![CDATA[Buchungsbeschreibung]]></item>
+	        <item name="wcf.credits.log.id"><![CDATA[Buchungsnummer]]></item>
+	        <item name="wcf.credits.log.time"><![CDATA[Buchungsdatum]]></item>
+	        <item name="wcf.credits.log.desc"><![CDATA[Buchungsbeschreibung]]></item>
 		<item name="wcf.credits.log.nolog"><![CDATA[Keine Buchungen]]></item>
 		<item name="wcf.credits.log.pagesum"><![CDATA[Übertrag]]></item>
 		<item name="wcf.credits.log.allsum"><![CDATA[Gesamter Umsatz]]></item>

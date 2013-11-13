@@ -3,46 +3,41 @@
 <data>
 	<import>
 		<categories>
-			<category name="guthaben"></category>
-			<category name="guthaben.rights">
-				<parent>guthaben</parent>
+			<category name="credits"></category>
+			<category name="credits.rights">
+				<parent>credits</parent>
 			</category>
-			<category name="guthaben.transfer">
-				<parent>guthaben</parent>
+			<category name="credits.transfer">
+				<parent>credits</parent>
 			</category>
-			<category name="guthaben.moderation">
-				<parent>guthaben</parent>
+			<category name="credits.moderation">
+				<parent>credits</parent>
 			</category>
 		</categories>
 
 		<options>
-			<option name="guthaben.canuse">
-				<categoryname>guthaben.rights</categoryname>
+			<option name="credits.canuse">
+				<categoryname>credits.rights</categoryname>
 				<optiontype>boolean</optiontype>
 				<defaultvalue>1</defaultvalue>
 			</option>
-			<option name="guthaben.transfer.canuse">
-				<categoryname>guthaben.transfer</categoryname>
+			<option name="credits.transfer.canuse">
+				<categoryname>credits.transfer</categoryname>
 				<optiontype>boolean</optiontype>
 				<defaultvalue>1</defaultvalue>
 			</option>
-			<option name="guthaben.transfer.canreceive">
-				<categoryname>guthaben.transfer</categoryname>
+			<option name="credits.transfer.canreceive">
+				<categoryname>credits.transfer</categoryname>
 				<optiontype>boolean</optiontype>
 				<defaultvalue>1</defaultvalue>
 			</option>
-			<option name="guthaben.moderation.cantransfer">
-				<categoryname>guthaben.moderation</categoryname>
+			<option name="credits.moderation.cantransfer">
+				<categoryname>credits.moderation</categoryname>
 				<optiontype>boolean</optiontype>
 				<defaultvalue>0</defaultvalue>
 			</option>
-			<option name="guthaben.log.canuse">
-				<categoryname>guthaben.rights</categoryname>
-				<optiontype>boolean</optiontype>
-				<defaultvalue>1</defaultvalue>
-			</option>
-			<option name="guthaben.forbes.canuse">
-				<categoryname>guthaben.rights</categoryname>
+			<option name="credits.log.canuse">
+				<categoryname>credits.rights</categoryname>
 				<optiontype>boolean</optiontype>
 				<defaultvalue>1</defaultvalue>
 			</option>
